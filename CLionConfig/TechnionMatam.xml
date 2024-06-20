@@ -9,7 +9,7 @@
       <rule entity="UNION,GLOBAL_FUNCTION" visibility="ANY" specifier="ANY" prefix="" style="CAMEL_CASE" suffix="" />
       <rule entity="GLOBAL_VARIABLE,PARAMETER,LOCAL_VARIABLE" visibility="ANY" specifier="ANY" prefix="" style="CAMEL_CASE" suffix="" />
       <rule entity="CLASS_MEMBER_FUNCTION,STRUCT_MEMBER_FUNCTION,CLASS_MEMBER_FIELD,STRUCT_MEMBER_FIELD" visibility="PRIVATE" specifier="ANY" prefix="m_" style="CAMEL_CASE" suffix="" />
-      <rule entity="ENUM,GLOBAL_FUNCTION,GLOBAL_VARIABLE,CLASS_MEMBER_FUNCTION,CLASS_MEMBER_FIELD,LOCAL_VARIABLE" visibility="ANY" specifier="CONST" prefix="" style="SCREAMING_SNAKE_CASE" suffix="" />
+      <rule entity="ENUM,GLOBAL_VARIABLE,CLASS_MEMBER_FIELD,STRUCT_MEMBER_FIELD" visibility="ANY" specifier="CONST" prefix="" style="SCREAMING_SNAKE_CASE" suffix="" />
     </rules>
   </Objective-C-extensions>
   <Objective-C-extensions>
@@ -20,7 +20,7 @@
       <rule entity="UNION,GLOBAL_FUNCTION" visibility="ANY" specifier="ANY" prefix="" style="CAMEL_CASE" suffix="" />
       <rule entity="GLOBAL_VARIABLE,PARAMETER,LOCAL_VARIABLE" visibility="ANY" specifier="ANY" prefix="" style="CAMEL_CASE" suffix="" />
       <rule entity="CLASS_MEMBER_FUNCTION,STRUCT_MEMBER_FUNCTION,CLASS_MEMBER_FIELD,STRUCT_MEMBER_FIELD" visibility="PRIVATE" specifier="ANY" prefix="m_" style="CAMEL_CASE" suffix="" />
-      <rule entity="ENUM,GLOBAL_FUNCTION,GLOBAL_VARIABLE,CLASS_MEMBER_FUNCTION,CLASS_MEMBER_FIELD,LOCAL_VARIABLE" visibility="ANY" specifier="CONST" prefix="" style="SCREAMING_SNAKE_CASE" suffix="" />
+      <rule entity="ENUM,GLOBAL_VARIABLE,CLASS_MEMBER_FIELD,STRUCT_MEMBER_FIELD" visibility="ANY" specifier="CONST" prefix="" style="SCREAMING_SNAKE_CASE" suffix="" />
     </rules>
   </Objective-C-extensions>
   <files>
