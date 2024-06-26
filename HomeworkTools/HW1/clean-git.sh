@@ -17,7 +17,6 @@ if [ ! -f ./.gitignore ]; then
     echo "**/*.out" >> ./.gitignore
     git add ./.gitignore
     git commit -m "Add gitignore"
-    git push
 fi
 git rm --cached -r ./cmake-build-debug/
 git commit -m "Remove cmake-build-debug from git index"
