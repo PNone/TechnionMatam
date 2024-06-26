@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ ! -z "$(git status --porcelain -u no)" ]]; then
+if [[ ! -z "$(git status --porcelain -uno | grep -v -e 'cmake-build-debug' -e '.idea' ) ]]; then
     echo "Cannot clean git while repo files were changed but not comitted" >&2;
     exit -1;
 fi
