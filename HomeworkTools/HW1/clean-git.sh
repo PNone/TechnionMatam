@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ ! -z "$(git status --untracked-files=no --porcelain)" ]]; then
+if [[ ! -z "$(git status --porcelain -u no)" ]]; then
     echo "Cannot clean git while repo files were changed but not comitted" >&2;
     exit -1;
 fi
