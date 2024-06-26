@@ -1,10 +1,14 @@
 #!/bin/bash
-if [[ ! -z "$(git status --porcelain -uno | grep -v -e 'cmake-build-debug' -e '.idea' ) ]]; then
+
+if [[ ! -z "$(git status --porcelain -uno | grep -v -e 'cmake-build-debug' -e '.idea' )" ]]; then
     echo "Cannot clean git while repo files were changed but not comitted" >&2;
     exit -1;
 fi
+
 read -p "Enter branch to implement fixes to [main]: " branch
 branch=${branch:-main}
+git checkout $branch
+
 if [ ! -f ./.gitignore ]; then
     echo ".gitignore missing, creating and commiting the file"
     echo "cmake-build-debug/" > ./.gitignore
