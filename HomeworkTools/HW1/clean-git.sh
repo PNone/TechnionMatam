@@ -8,6 +8,7 @@ fi
 read -p "Enter branch to implement fixes to [main]: " branch
 branch=${branch:-main}
 git checkout $branch
+git pull
 
 if [ ! -f ./.gitignore ]; then
     echo ".gitignore missing, creating and commiting the file"
