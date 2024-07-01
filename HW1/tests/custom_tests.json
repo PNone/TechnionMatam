@@ -236,11 +236,22 @@
       "expected_output_file": "misc/tooManyParams.expected"
     },
     {
-      "name": "Misc - invalid operation",
+      "name": "Misc - invalid operation - empty params",
       "template": "invalid_operation",
       "params": {
         "source": "",
         "target": "",
+        "out": "misc/invalidOperation.out"
+      },
+      "output_file": "misc/invalidOperation.out",
+      "expected_output_file": "misc/invalidOperation.expected"
+    },
+    {
+      "name": "Misc - invalid operation - valid params",
+      "template": "invalid_operation",
+      "params": {
+        "source": "misc/invalidOperation.source",
+        "target": "misc/invalidOperation.target",
         "out": "misc/invalidOperation.out"
       },
       "output_file": "misc/invalidOperation.out",
