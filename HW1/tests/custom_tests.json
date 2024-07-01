@@ -21,7 +21,7 @@
       "expected_output_file": "verify/example.expected"
     },
     {
-      "name": "Verify - source longer than target",
+      "name": "Verify - source has more trnasactions than target",
       "template": "verify",
       "params": {
         "source": "verify/longerSource.source",
@@ -32,7 +32,7 @@
       "expected_output_file": "verify/longerSource.expected"
     },
     {
-      "name": "Verify - source shorter than target",
+      "name": "Verify - target has more trnasactions than source",
       "template": "verify",
       "params": {
         "source": "verify/shorterSource.source",
@@ -75,7 +75,7 @@
       "expected_output_file": "hash/example.target.expected"
     },
     {
-      "name": "Hash - uncrompressed blockhain",
+      "name": "Hash - uncompressed BlockChain",
       "template": "hash",
       "params": {
         "source": "hash/uncompressed.source",
@@ -224,13 +224,25 @@
       "expected_output_file": "misc/noParams.expected"
     },
     {
-      "name": "Misc - too many params",
+      "name": "Misc - too few params",
       "template": "too_many_params",
       "params": {
         "source": "",
         "target": "",
+        "out": "misc/tooFewParams.out",
+        "invalid_param": "9"
+      },
+      "output_file": "misc/tooFewParams.out",
+      "expected_output_file": "misc/tooFewParams.expected"
+    },
+    {
+      "name": "Misc - too many params",
+      "template": "too_many_params",
+      "params": {
+        "source": "misc/tooFewParams.source",
+        "target": "misc/tooFewParams.target",
         "out": "misc/tooManyParams.out",
-        "invalid_params": "9"
+        "invalid_param": "9"
       },
       "output_file": "misc/tooManyParams.out",
       "expected_output_file": "misc/tooManyParams.expected"
