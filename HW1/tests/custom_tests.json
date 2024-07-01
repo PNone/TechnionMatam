@@ -1,0 +1,250 @@
+{
+  "templates": {
+    "verify": "verify :::source::: :::target::: > :::out:::",
+    "hash": "hash :::source::: :::target:::",
+    "compress": "compress :::source::: :::target:::",
+    "format": "format :::source::: :::target:::",
+    "no_params": "> :::out:::",
+    "too_many_params": "verify :::invalid_param::: :::source::: :::target::: > :::out:::",
+    "invalid_operation": "append :::source::: :::target::: > :::out:::"
+  },
+  "tests": [
+    {
+      "name": "Verify Example Test",
+      "template": "verify",
+      "params": {
+        "source": "verify/example.source",
+        "target": "verify/example.target",
+        "out": "verify/example.out"
+      },
+      "output_file": "verify/example.out",
+      "expected_output_file": "verify/example.expected"
+    },
+    {
+      "name": "Verify - source longer than target",
+      "template": "verify",
+      "params": {
+        "source": "verify/longerSource.source",
+        "target": "verify/longerSource.target",
+        "out": "verify/longerSource.out"
+      },
+      "output_file": "verify/longerSource.out",
+      "expected_output_file": "verify/longerSource.expected"
+    },
+    {
+      "name": "Verify - source shorter than target",
+      "template": "verify",
+      "params": {
+        "source": "verify/shorterSource.source",
+        "target": "verify/shorterSource.target",
+        "out": "verify/shorterSource.out"
+      },
+      "output_file": "verify/shorterSource.out",
+      "expected_output_file": "verify/shorterSource.expected"
+    },
+    {
+      "name": "Verify Empty Source Test",
+      "template": "verify",
+      "params": {
+        "source": "verify/empty.source",
+        "target": "verify/empty.target",
+        "out": "verify/empty.out"
+      },
+      "output_file": "verify/empty.out",
+      "expected_output_file": "verify/empty.expected"
+    },
+    {
+      "name": "Verify Invalid Hash Test",
+      "template": "verify",
+      "params": {
+        "source": "verify/invalidHash.source",
+        "target": "verify/invalidHash.target",
+        "out": "verify/invalidHash.out"
+      },
+      "output_file": "verify/invalidHash.out",
+      "expected_output_file": "verify/invalidHash.expected"
+    },
+    {
+      "name": "Hash Example Test",
+      "template": "hash",
+      "params": {
+        "source": "hash/example.source",
+        "target": "hash/example.target.out"
+      },
+      "output_file": "hash/example.target.out",
+      "expected_output_file": "hash/example.target.expected"
+    },
+    {
+      "name": "Hash - uncrompressed blockhain",
+      "template": "hash",
+      "params": {
+        "source": "hash/uncompressed.source",
+        "target": "hash/uncompressed.target.out"
+      },
+      "output_file": "hash/uncompressed.target.out",
+      "expected_output_file": "hash/uncompressed.target.expected"
+    },
+    {
+      "name": "Hash - long hash key",
+      "template": "hash",
+      "params": {
+        "source": "hash/longHashKey.source",
+        "target": "hash/longHashKey.target.out"
+      },
+      "output_file": "hash/longHashKey.target.out",
+      "expected_output_file": "hash/longHashKey.target.expected"
+    },
+    {
+      "name": "Hash Single Transaction Test",
+      "template": "hash",
+      "params": {
+        "source": "hash/singleTransaction.source",
+        "target": "hash/singleTransaction.target.out"
+      },
+      "output_file": "hash/singleTransaction.target.out",
+      "expected_output_file": "hash/singleTransaction.target.expected"
+    },
+    {
+      "name": "Hash Special Characters Test",
+      "template": "hash",
+      "params": {
+        "source": "hash/specialChars.source",
+        "target": "hash/specialChars.target.out"
+      },
+      "output_file": "hash/specialChars.target.out",
+      "expected_output_file": "hash/specialChars.target.expected"
+    },
+    {
+      "name": "Compress Example Test",
+      "template": "compress",
+      "params": {
+        "source": "compress/example.source",
+        "target": "compress/example.target.out"
+      },
+      "output_file": "compress/example.target.out",
+      "expected_output_file": "compress/example.target.expected"
+    },
+    {
+      "name": "Compress short interval",
+      "template": "compress",
+      "params": {
+        "source": "compress/shortInterval.source",
+        "target": "compress/shortInterval.target.out"
+      },
+      "output_file": "compress/shortInterval.target.out",
+      "expected_output_file": "compress/shortInterval.target.expected"
+    },
+    {
+      "name": "Compress - no transactions to compress",
+      "template": "compress",
+      "params": {
+        "source": "compress/nothingToCompress.source",
+        "target": "compress/nothingToCompress.target.out"
+      },
+      "output_file": "compress/nothingToCompress.target.out",
+      "expected_output_file": "compress/nothingToCompress.target.expected"
+    },
+    {
+      "name": "Compress - specific numbers",
+      "template": "compress",
+      "params": {
+        "source": "compress/specificNumbers.source",
+        "target": "compress/specificNumbers.target.out"
+      },
+      "output_file": "compress/specificNumbers.target.out",
+      "expected_output_file": "compress/specificNumbers.target.expected"
+    },
+    {
+      "name": "Compress separate chunks test",
+      "template": "compress",
+      "params": {
+        "source": "compress/compressChunks.source",
+        "target": "compress/compressChunks.target.out"
+      },
+      "output_file": "compress/compressChunks.target.out",
+      "expected_output_file": "compress/compressChunks.target.expected"
+    },
+    {
+      "name": "Compress Empty Source Test",
+      "template": "compress",
+      "params": {
+        "source": "compress/empty.source",
+        "target": "compress/empty.target.out"
+      },
+      "output_file": "compress/empty.target.out",
+      "expected_output_file": "compress/empty.target.expected"
+    },
+    {
+      "name": "Compress - invalid date",
+      "template": "compress",
+      "params": {
+        "source": "compress/invalidDate.source",
+        "target": "compress/invalidDate.target.out"
+      },
+      "output_file": "compress/invalidDate.target.out",
+      "expected_output_file": "compress/invalidDate.target.expected"
+    },
+    {
+      "name": "Format Example Test",
+      "template": "format",
+      "params": {
+        "source": "format/example.source",
+        "target": "format/example.target.out"
+      },
+      "output_file": "format/example.target.out",
+      "expected_output_file": "format/example.target.expected"
+    },
+    {
+      "name": "Format - Special Chars",
+      "template": "format",
+      "params": {
+        "source": "format/specialChars.source",
+        "target": "format/specialChars.target.out"
+      },
+      "output_file": "format/specialChars.target.out",
+      "expected_output_file": "format/specialChars.target.expected"
+    },
+    {
+      "name": "Format Empty Source Test",
+      "template": "format",
+      "params": {
+        "source": "format/empty.source",
+        "target": "format/empty.target.out"
+      },
+      "output_file": "format/empty.target.out",
+      "expected_output_file": "format/empty.expected"
+    },
+    {
+      "name": "Misc - no params",
+      "template": "no_params",
+      "params": {
+        "out": "misc/noParams.out"
+      },
+      "output_file": "misc/noParams.out",
+      "expected_output_file": "misc/noParams.expected"
+    },
+    {
+      "name": "Misc - too many params",
+      "template": "too_many_params",
+      "params": {
+        "source": "",
+        "target": "",
+        "out": "misc/tooManyParams.out",
+        "invalid_params": "9"
+      },
+      "output_file": "misc/tooManyParams.out",
+      "expected_output_file": "misc/tooManyParams.expected"
+    },
+    {
+      "name": "Misc - invalid operation",
+      "template": "invalid_operation",
+      "params": {
+        "source": "",
+        "target": "",
+        "out": "misc/invalidOperation.out"
+      },
+      "output_file": "misc/invalidOperation.out",
+      "expected_output_file": "misc/invalidOperation.expected"
+    }
+  ]
+}
