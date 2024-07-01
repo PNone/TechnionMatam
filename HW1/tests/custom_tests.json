@@ -21,7 +21,7 @@
       "expected_output_file": "verify/example.expected"
     },
     {
-      "name": "Verify - source has more trnasactions than target",
+      "name": "Verify - source has more transactions than target",
       "template": "verify",
       "params": {
         "source": "verify/longerSource.source",
