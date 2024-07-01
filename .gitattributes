@@ -1,1 +1,2 @@
 HomeworkTools/HW1/clean-git.sh eol=lf
+HW1/tests/**/*.target eol=lf
