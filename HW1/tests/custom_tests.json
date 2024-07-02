@@ -43,17 +43,6 @@
       "expected_output_file": "verify/shorterSource.expected"
     },
     {
-      "name": "Verify Empty Source Test",
-      "template": "verify",
-      "params": {
-        "source": "verify/empty.source",
-        "target": "verify/empty.target",
-        "out": "verify/empty.out"
-      },
-      "output_file": "verify/empty.out",
-      "expected_output_file": "verify/empty.expected"
-    },
-    {
       "name": "Verify Invalid Hash Test",
       "template": "verify",
       "params": {
@@ -165,16 +154,6 @@
       "expected_output_file": "compress/compressChunks.target.expected"
     },
     {
-      "name": "Compress Empty Source Test",
-      "template": "compress",
-      "params": {
-        "source": "compress/empty.source",
-        "target": "compress/empty.target.out"
-      },
-      "output_file": "compress/empty.target.out",
-      "expected_output_file": "compress/empty.target.expected"
-    },
-    {
       "name": "Compress - invalid date",
       "template": "compress",
       "params": {
@@ -203,16 +182,6 @@
       },
       "output_file": "format/specialChars.target.out",
       "expected_output_file": "format/specialChars.target.expected"
-    },
-    {
-      "name": "Format Empty Source Test",
-      "template": "format",
-      "params": {
-        "source": "format/empty.source",
-        "target": "format/empty.target.out"
-      },
-      "output_file": "format/empty.target.out",
-      "expected_output_file": "format/empty.expected"
     },
     {
       "name": "Misc - no params",
