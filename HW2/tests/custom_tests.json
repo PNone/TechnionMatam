@@ -1,0 +1,17 @@
+{
+  "templates": {
+    "hw2": ":::testName::: > :::out:::"
+  },
+  "tests": [
+    {
+      "name": "Example Test",
+      "template": "hw2",
+      "params": {
+        "testName": "example",
+        "out": "example.out"
+      },
+      "output_file": "example.out",
+      "expected_output_file": "example.expected"
+    }
+  ]
+}
