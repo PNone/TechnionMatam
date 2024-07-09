@@ -24,8 +24,10 @@ do {                                                                           \
 
 int main(int argc, char **argv) {
     string testName = string(argv[1]);
-    if (testName == "example") {
+    if (testName == "example" || testName == "exampleMatrix") {
         testMatrix(std::cout);
+    }
+    if (testName == "example" || testName == "exampleMataMvidia") {
         testMataMvidia(std::cout);
     }
 

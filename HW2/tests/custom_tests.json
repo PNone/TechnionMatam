@@ -14,6 +14,26 @@
       },
       "output_file": "example.out",
       "expected_output_file": "example.expected"
+    },
+    {
+      "name": "Example Matrix Test",
+      "template": "hw2",
+      "params": {
+        "testName": "exampleMatrix",
+        "out": "exampleMatrix.out"
+      },
+      "output_file": "exampleMatrix.out",
+      "expected_output_file": "exampleMatrix.expected"
+    },
+    {
+      "name": "Example MataMvidia Test",
+      "template": "hw2",
+      "params": {
+        "testName": "exampleMataMvidia",
+        "out": "exampleMataMvidia.out"
+      },
+      "output_file": "exampleMataMvidia.out",
+      "expected_output_file": "exampleMataMvidia.expected"
     }
   ]
 }
