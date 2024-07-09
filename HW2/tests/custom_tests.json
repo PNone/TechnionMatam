@@ -1,6 +1,8 @@
 {
   "templates": {
-    "hw2": ":::testName::: > :::out:::"
+    "hw2": ":::testName::: > :::out:::",
+    "hw2Error": ":::testName::: 2> :::out:::",
+    "hw2StdAndError": ":::testName::: &> :::out:::"
   },
   "tests": [
     {
