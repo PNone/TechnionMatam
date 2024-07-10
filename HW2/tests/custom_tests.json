@@ -34,6 +34,66 @@
       },
       "output_file": "exampleMataMvidia.out",
       "expected_output_file": "exampleMataMvidia.expected"
+    },
+    {
+      "name": "Constructor Test (Thanks Linoy :))",
+      "template": "hw2",
+      "params": {
+        "testName": "constructorAssignment",
+        "out": "constructorAssignment.out"
+      },
+      "output_file": "constructorAssignment.out",
+      "expected_output_file": "constructorAssignment.expected"
+    },
+    {
+      "name": "Invalid Index Test 1 (Thanks Linoy :))",
+      "template": "hw2Error",
+      "params": {
+        "testName": "constructorErrorSize1",
+        "out": "constructorErrorSize1.out"
+      },
+      "output_file": "constructorErrorSize1.out",
+      "expected_output_file": "errorSize.expected"
+    },
+    {
+      "name": "Invalid Index Test 2 (Thanks Linoy :))",
+      "template": "hw2Error",
+      "params": {
+        "testName": "constructorErrorSize2",
+        "out": "constructorErrorSize2.out"
+      },
+      "output_file": "constructorErrorSize2.out",
+      "expected_output_file": "errorSize.expected"
+    },
+    {
+      "name": "Invalid Index Test 3 (Thanks Linoy :))",
+      "template": "hw2Error",
+      "params": {
+        "testName": "constructorErrorSize3",
+        "out": "constructorErrorSize3.out"
+      },
+      "output_file": "constructorErrorSize3.out",
+      "expected_output_file": "errorSize.expected"
+    },
+    {
+      "name": "Invalid Index Test 4 (Thanks Linoy :))",
+      "template": "hw2Error",
+      "params": {
+        "testName": "constructorErrorSize4",
+        "out": "constructorErrorSize4.out"
+      },
+      "output_file": "constructorErrorSize4.out",
+      "expected_output_file": "errorSize.expected"
+    },
+    {
+      "name": "Mata Mvidia End to End (Thanks Linoy :))",
+      "template": "hw2",
+      "params": {
+        "testName": "mataMvidiaE2e",
+        "out": "mataMvidiaE2e.out"
+      },
+      "output_file": "mataMvidiaE2e.out",
+      "expected_output_file": "mataMvidiaE2e.expected"
     }
   ]
 }
