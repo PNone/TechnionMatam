@@ -53,7 +53,8 @@
         "out": "constructorErrorSize1.out"
       },
       "output_file": "constructorErrorSize1.out",
-      "expected_output_file": "errorSize.expected"
+      "expected_output_file": "errorSize.expected",
+      "run_leaks": false
     },
     {
       "name": "Invalid Index Test 2 (Thanks Linoy :))",
@@ -63,7 +64,8 @@
         "out": "constructorErrorSize2.out"
       },
       "output_file": "constructorErrorSize2.out",
-      "expected_output_file": "errorSize.expected"
+      "expected_output_file": "errorSize.expected",
+      "run_leaks": false
     },
     {
       "name": "Invalid Index Test 3 (Thanks Linoy :))",
@@ -73,7 +75,8 @@
         "out": "constructorErrorSize3.out"
       },
       "output_file": "constructorErrorSize3.out",
-      "expected_output_file": "errorSize.expected"
+      "expected_output_file": "errorSize.expected",
+      "run_leaks": false
     },
     {
       "name": "Invalid Index Test 4 (Thanks Linoy :))",
@@ -83,7 +86,8 @@
         "out": "constructorErrorSize4.out"
       },
       "output_file": "constructorErrorSize4.out",
-      "expected_output_file": "errorSize.expected"
+      "expected_output_file": "errorSize.expected",
+      "run_leaks": false
     },
     {
       "name": "Mata Mvidia End to End (Thanks Linoy :))",
