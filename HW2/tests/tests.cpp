@@ -47,6 +47,8 @@ void testSubtractionAssignmentZeroResult(std::ostream &out);
 
 void testMultiplicationAssignmentZeroResult(std::ostream &out);
 
+bool testZeroMatrix(std::ostream &out);
+
 
 #define ASSERT_TEST(expr)                                                      \
 do {                                                                           \
