@@ -35,6 +35,20 @@ bool testMatrixTransformations(std::ostream &out);
 
 bool testNonSquareMatrixTransformations(std::ostream &out);
 
+void testAdditionZeroResult(std::ostream &out);
+
+void testSubtractionZeroResult(std::ostream &out);
+
+void testMultiplicationZeroResult(std::ostream &out);
+
+void testScalarMultiplicationZeroResult(std::ostream &out);
+
+void testAdditionAssignmentZeroResult(std::ostream &out);
+
+void testSubtractionAssignmentZeroResult(std::ostream &out);
+
+void testMultiplicationAssignmentZeroResult(std::ostream &out);
+
 
 #define ASSERT_TEST(expr)                                                      \
 do {                                                                           \
@@ -87,6 +101,27 @@ int main(int argc, char **argv) {
     }
     if (testName == "nonSquareMatrixTransformations") {
         testNonSquareMatrixTransformations(std::cout);
+    }
+    if (testName == "additionZeroResult") {
+        testAdditionZeroResult(std::cout);
+    }
+    if (testName == "subZeroResult") {
+        testSubtractionZeroResult(std::cout);
+    }
+    if (testName == "multiplyZeroResult") {
+        testMultiplicationZeroResult(std::cout);
+    }
+    if (testName == "scalarMultiplyZeroResult") {
+        testScalarMultiplicationZeroResult(std::cout);
+    }
+    if (testName == "additionAssignmentZeroResult") {
+        testAdditionAssignmentZeroResult(std::cout);
+    }
+    if (testName == "subAssignmentZeroResult") {
+        testSubtractionAssignmentZeroResult(std::cout);
+    }
+    if (testName == "multiplyAssignmentZeroResult") {
+        testMultiplicationAssignmentZeroResult(std::cout);
     }
 
     return 0;
@@ -571,3 +606,160 @@ bool testNonSquareMatrixTransformations(std::ostream &out) {
     return true;
 }
 
+void testAdditionZeroResult(std::ostream &out) {
+    Matrix A(2, 2);
+    Matrix B(2, 2);
+
+    // Initialize matrices with specific values
+    A(0, 0) = 1;
+    A(0, 1) = -1;
+    A(1, 0) = 1;
+    A(1, 1) = -1;
+
+    B(0, 0) = -1;
+    B(0, 1) = 1;
+    B(1, 0) = -1;
+    B(1, 1) = 1;
+
+    Matrix result = A + B;
+    out << result;
+}
+
+void testSubtractionZeroResult(std::ostream &out) {
+    Matrix A(2, 2);
+    Matrix B(2, 2);
+
+    // Initialize matrices with specific values
+    A(0, 0) = 1;
+    A(0, 1) = -1;
+    A(1, 0) = 1;
+    A(1, 1) = -1;
+
+    B(0, 0) = 1;
+    B(0, 1) = -1;
+    B(1, 0) = 1;
+    B(1, 1) = -1;
+
+    Matrix result = A - B;
+    out << result;
+}
+
+void testMultiplicationZeroResult(std::ostream &out) {
+    Matrix A(2, 2);
+    Matrix B(2, 2);
+
+    // Initialize matrices with specific values
+    A(0, 0) = 1;
+    A(0, 1) = 0;
+    A(1, 0) = 0;
+    A(1, 1) = 1;
+
+    B(0, 0) = 0;
+    B(0, 1) = 0;
+    B(1, 0) = 0;
+    B(1, 1) = 0;
+
+    Matrix result = A * B;
+    out << "Test Multiplication:" << endl;
+    out << result << endl;
+
+    Matrix C(3, 2);
+    Matrix D(2, 3);
+
+    // Initialize matrices with specific values
+    C(0, 0) = 1;
+    C(0, 1) = 0;
+    C(1, 0) = 0;
+    C(1, 1) = 0;
+    C(2, 0) = 0;
+    C(2, 1) = 0;
+
+    D(0, 0) = 0;
+    D(0, 1) = 0;
+    D(0, 2) = 0;
+    D(1, 0) = 0;
+    D(1, 1) = 0;
+    D(1, 2) = 1;
+
+    Matrix result2 = C * D;
+    out << result2 << endl;
+}
+
+void testScalarMultiplicationZeroResult(std::ostream &out) {
+    Matrix A(2, 2);
+
+    // Initialize matrix with specific values
+    A(0, 0) = 1;
+    A(0, 1) = -1;
+    A(1, 0) = 1;
+    A(1, 1) = -1;
+
+    Matrix result = A * 0;
+    out << "Test Scalar Right Multiplication:" << endl;
+    out << result << endl;
+
+    Matrix result2 = 0 * A;
+    out << "Test Scalar Left Multiplication:" << endl;
+    out << result2;
+}
+
+void testAdditionAssignmentZeroResult(std::ostream &out) {
+    Matrix A(2, 2);
+    Matrix B(2, 2);
+
+    // Initialize matrices with specific values
+    A(0, 0) = 1;
+    A(0, 1) = -1;
+    A(1, 0) = 1;
+    A(1, 1) = -1;
+
+    B(0, 0) = -1;
+    B(0, 1) = 1;
+    B(1, 0) = -1;
+    B(1, 1) = 1;
+
+    A += B;
+    out << A;
+}
+
+void testSubtractionAssignmentZeroResult(std::ostream &out) {
+    Matrix A(2, 2);
+    Matrix B(2, 2);
+
+    // Initialize matrices with specific values
+    A(0, 0) = 1;
+    A(0, 1) = -1;
+    A(1, 0) = 1;
+    A(1, 1) = -1;
+
+    B(0, 0) = 1;
+    B(0, 1) = -1;
+    B(1, 0) = 1;
+    B(1, 1) = -1;
+
+    A -= B;
+    out << A;
+}
+
+void testMultiplicationAssignmentZeroResult(std::ostream &out) {
+    Matrix A(2, 2);
+    Matrix B(2, 2);
+
+    // Initialize matrices with specific values
+    A(0, 0) = 1;
+    A(0, 1) = 0;
+    A(1, 0) = 0;
+    A(1, 1) = 1;
+
+    B(0, 0) = 0;
+    B(0, 1) = 0;
+    B(1, 0) = 0;
+    B(1, 1) = 0;
+
+    Matrix D = A;
+    A *= B;
+    out << "Test Multiplication Assignment:" << endl;
+    out << A << endl;
+    D *= 0;
+    out << D;
+}

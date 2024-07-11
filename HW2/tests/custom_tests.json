@@ -138,6 +138,76 @@
       },
       "output_file": "nonSquareMatrixTransformations.out",
       "expected_output_file": "nonSquareMatrixTransformations.expected"
+    },
+    {
+      "name": "Matrix Sum is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "additionZeroResult",
+        "out": "additionZeroResult.out"
+      },
+      "output_file": "additionZeroResult.out",
+      "expected_output_file": "twoByTwoZeroResult.expected"
+    },
+    {
+      "name": "Matrix Subtraction is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "subZeroResult",
+        "out": "subZeroResult.out"
+      },
+      "output_file": "subZeroResult.out",
+      "expected_output_file": "twoByTwoZeroResult.expected"
+    },
+    {
+      "name": "Matrix Multiplication is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "multiplyZeroResult",
+        "out": "multiplyZeroResult.out"
+      },
+      "output_file": "multiplyZeroResult.out",
+      "expected_output_file": "multiplyZeroResult.expected"
+    },
+    {
+      "name": "Matrix Scalar Multiplication is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "scalarMultiplyZeroResult",
+        "out": "scalarMultiplyZeroResult.out"
+      },
+      "output_file": "scalarMultiplyZeroResult.out",
+      "expected_output_file": "scalarMultiplyZeroResult.expected"
+    },
+    {
+      "name": "Matrix Sum Assignment Multiplication is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "additionAssignmentZeroResult",
+        "out": "additionAssignmentZeroResult.out"
+      },
+      "output_file": "additionAssignmentZeroResult.out",
+      "expected_output_file": "twoByTwoZeroResult.expected"
+    },
+    {
+      "name": "Matrix Subtract Assignment Multiplication is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "subAssignmentZeroResult",
+        "out": "subAssignmentZeroResult.out"
+      },
+      "output_file": "subAssignmentZeroResult.out",
+      "expected_output_file": "twoByTwoZeroResult.expected"
+    },
+    {
+      "name": "Matrix Multiplication Assignment Multiplication is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "multiplyAssignmentZeroResult",
+        "out": "multiplyAssignmentZeroResult.out"
+      },
+      "output_file": "multiplyAssignmentZeroResult.out",
+      "expected_output_file": "multiplyAssignmentZeroResult.expected"
     }
   ]
 }
