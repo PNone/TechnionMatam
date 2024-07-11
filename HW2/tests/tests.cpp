@@ -773,7 +773,7 @@ bool testZeroMatrix(std::ostream &out) {
     Matrix zeroMatrix0x0(0, 0);
     Matrix zeroMatrix0x0Second(0, 0);
     Matrix zeroMatrix0x2(0, 2);
-    out << "Constructor: " << endl;
+    out << "Constructor:" << endl;
     out << zeroMatrix1 << endl;
     out << zeroMatrix0x0 << endl;
     out << zeroMatrix0x2 << endl;
@@ -782,7 +782,7 @@ bool testZeroMatrix(std::ostream &out) {
     const Matrix &copy1(zeroMatrix1);
     const Matrix &copy0x0(zeroMatrix0x0);
     const Matrix &copy0x2(zeroMatrix0x2);
-    out << "Copy constructor: " << endl;
+    out << "Copy constructor:" << endl;
     out << copy1 << endl;
     out << copy0x0 << endl;
     out << copy0x2 << endl;
@@ -791,7 +791,7 @@ bool testZeroMatrix(std::ostream &out) {
     const Matrix &assigned1 = zeroMatrix1;
     const Matrix &assigned0x0 = zeroMatrix0x0;
     const Matrix &assigned0x2 = zeroMatrix0x2;
-    out << "Assignment operator: " << endl;
+    out << "Assignment operator:" << endl;
     out << assigned1 << endl;
     out << assigned0x0 << endl;
     out << assigned0x2 << endl;
@@ -800,7 +800,7 @@ bool testZeroMatrix(std::ostream &out) {
     Matrix rotatedCW1 = zeroMatrix1.rotateClockwise();
     Matrix rotatedCW0x0 = zeroMatrix0x0.rotateClockwise();
     Matrix rotatedCW0x2 = zeroMatrix0x2.rotateClockwise();
-    out << "Rotate clockwise: " << endl;
+    out << "Rotate clockwise:" << endl;
     out << rotatedCW1 << endl;
     out << rotatedCW0x0 << endl;
     // out << rotatedCW0x2 << endl;
@@ -809,7 +809,7 @@ bool testZeroMatrix(std::ostream &out) {
     Matrix rotatedCCW1 = zeroMatrix1.rotateCounterClockwise();
     Matrix rotatedCCW0x0 = zeroMatrix0x0.rotateCounterClockwise();
     Matrix rotatedCCW0x2 = zeroMatrix0x2.rotateCounterClockwise();
-    out << "Rotate counter-clockwise: " << endl;
+    out << "Rotate counter-clockwise:" << endl;
     out << rotatedCCW1 << endl;
     out << rotatedCCW0x0 << endl;
     // out << rotatedCCW0x2 << endl;
@@ -818,7 +818,7 @@ bool testZeroMatrix(std::ostream &out) {
     Matrix transposed1 = zeroMatrix1.transpose();
     Matrix transposed0x0 = zeroMatrix0x0.transpose();
     Matrix transposed0x2 = zeroMatrix0x2.transpose();
-    out << "Transpose: " << endl;
+    out << "Transpose:" << endl;
     out << transposed1 << endl;
     out << transposed0x0 << endl;
     // out << transposed0x2 << endl;
@@ -827,7 +827,7 @@ bool testZeroMatrix(std::ostream &out) {
     Matrix negated1 = -zeroMatrix1;
     Matrix negated0x0 = -zeroMatrix0x0;
     Matrix negated0x2 = -zeroMatrix0x2;
-    out << "Negation operator: " << endl;
+    out << "Negation operator:" << endl;
     out << negated1 << endl;
     out << negated0x0 << endl;
     // out << negated0x2 << endl;
@@ -837,7 +837,7 @@ bool testZeroMatrix(std::ostream &out) {
     Matrix sum1 = zeroMatrix1 + zeroMatrix2;
     Matrix sum0x0 = zeroMatrix0x0 + zeroMatrix0x0;
     Matrix sum0x2 = zeroMatrix0x2 + zeroMatrix0x2;
-    out << "Addition operator: " << endl;
+    out << "Addition operator:" << endl;
     out << sum1 << endl;
     out << sum0x0 << endl;
     // out << sum0x2 << endl;
@@ -846,7 +846,7 @@ bool testZeroMatrix(std::ostream &out) {
     Matrix difference1 = zeroMatrix1 - zeroMatrix2;
     // Todo: Matrix difference0x0 = zeroMatrix0x0 - zeroMatrix0x0;
     Matrix difference0x0 = zeroMatrix0x0 - zeroMatrix0x0Second;
-    out << "Subtraction operator: " << endl;
+    out << "Subtraction operator:" << endl;
     out << difference1 << endl;
     out << difference0x0 << endl;
 
@@ -854,7 +854,7 @@ bool testZeroMatrix(std::ostream &out) {
     Matrix product1 = zeroMatrix1 * zeroMatrix2;
     Matrix product0x0 = zeroMatrix0x0 * zeroMatrix0x0;
     Matrix product0x2 = zeroMatrix0x2 * Matrix(2, 0);
-    out << "Multiplication operator: " << endl;
+    out << "Multiplication operator:" << endl;
     out << product1 << endl;
     out << product0x0 << endl;
     out << product0x2 << endl;
@@ -866,11 +866,11 @@ bool testZeroMatrix(std::ostream &out) {
     Matrix scalarProduct0x0_2 = zeroMatrix0x0 * 5;
     Matrix scalarProduct0x2_1 = 5 * zeroMatrix0x2;
     Matrix scalarProduct0x2_2 = zeroMatrix0x2 * 5;
-    out << "Scalar multiplication (left): " << endl;
+    out << "Scalar multiplication (left):" << endl;
     out << scalarProduct1_1 << endl;
     out << scalarProduct0x0_1 << endl;
     out << scalarProduct0x2_1 << endl;
-    out << "Scalar multiplication (right): " << endl;
+    out << "Scalar multiplication (right):" << endl;
     out << scalarProduct1_2 << endl;
     out << scalarProduct0x0_2 << endl;
     out << scalarProduct0x2_2 << endl;
@@ -894,7 +894,7 @@ bool testZeroMatrix(std::ostream &out) {
     subAssign1 -= zeroMatrix2;
     subAssign0x0 -= zeroMatrix0x0;
     subAssign0x2 -= zeroMatrix0x2;
-    out << "Subtraction assignment: " << endl;
+    out << "Subtraction assignment:" << endl;
     out << subAssign1 << endl;
     out << subAssign0x0 << endl;
     out << subAssign0x2 << endl;
@@ -906,7 +906,7 @@ bool testZeroMatrix(std::ostream &out) {
     multAssign1 *= zeroMatrix2;
     multAssign0x0 *= zeroMatrix0x0;
     multAssign0x2 *= Matrix(2, 0);
-    out << "Multiplication assignment: " << endl;
+    out << "Multiplication assignment:" << endl;
     out << multAssign1 << endl;
     out << multAssign0x0 << endl;
     out << multAssign0x2 << endl;
@@ -918,7 +918,7 @@ bool testZeroMatrix(std::ostream &out) {
     scalarMultAssign1 *= 5;
     scalarMultAssign0x0 *= 5;
     scalarMultAssign0x2 *= 5;
-    out << "Scalar multiplication assignment: " << endl;
+    out << "Scalar multiplication assignment:" << endl;
     out << scalarMultAssign1 << endl;
     out << scalarMultAssign0x0 << endl;
     out << scalarMultAssign0x2 << endl;

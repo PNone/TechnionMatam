@@ -1,64 +1,64 @@
-Constructor: 
+Constructor:
 |0|0|
 |0|0|
 
 
 
-Copy constructor: 
+Copy constructor:
 |0|0|
 |0|0|
 
 
 
-Assignment operator: 
+Assignment operator:
 |0|0|
 |0|0|
 
 
 
-Rotate clockwise: 
+Rotate clockwise:
 |0|0|
 |0|0|
 
 
-Rotate counter-clockwise: 
+Rotate counter-clockwise:
 |0|0|
 |0|0|
 
 
-Transpose: 
+Transpose:
 |0|0|
 |0|0|
 
 
-Negation operator
+Negation operator:
 |0|0|
 |0|0|
 
 
-Addition operator: 
+Addition operator:
 |0|0|
 |0|0|
 
 
-Subtraction operator: 
+Subtraction operator:
 |0|0|
 |0|0|
 
 
-Multiplication operator: 
-|0|0|
-|0|0|
-
-
-
-Scalar multiplication (left): 
+Multiplication operator:
 |0|0|
 |0|0|
 
 
 
-Scalar multiplication (right): 
+Scalar multiplication (left):
+|0|0|
+|0|0|
+
+
+
+Scalar multiplication (right):
 |0|0|
 |0|0|
 
@@ -70,19 +70,19 @@ Addition assignment:
 
 
 
-Subtraction assignment: 
+Subtraction assignment:
 |0|0|
 |0|0|
 
 
 
-Multiplication assignment: 
+Multiplication assignment:
 |0|0|
 |0|0|
 
 
 
-Scalar multiplication assignment: 
+Scalar multiplication assignment:
 |0|0|
 |0|0|
 
