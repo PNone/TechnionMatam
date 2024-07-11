@@ -1,13 +1,11 @@
-
-
 #include <string>
+#include <iostream>
 
 #include "Matrix.h"
 #include "MataMvidia.h"
 
-using namespace std;
-
-typedef bool (*testFunc)(void);
+using std::string;
+using std::endl;
 
 bool testMatrix(std::ostream &out);
 
