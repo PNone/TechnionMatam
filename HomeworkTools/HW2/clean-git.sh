@@ -16,6 +16,7 @@ if [ ! -f ./.gitignore ]; then
     echo "**/.idea/" >> ./.gitignore
     echo "**/mtm_pirate" >> ./.gitignore
     echo "**/Mvidia" >> ./.gitignore
+    echo "**/MvidiaTest" >> ./.gitignore
     echo "**/*.out" >> ./.gitignore
     echo "**/test_results.html" >> ./.gitignore
     git add ./.gitignore
@@ -31,6 +32,8 @@ git rm --cached **/test_results.html
 git commit -m "Remove tests' report from git index"
 git rm --cached **/Mvidia
 git commit -m "Remove wet compiled executable from git index"
+git rm --cached **/MvidiaTest
+git commit -m "Remove wet compiled testing executable from git index"
 git rm --cached **/mtm_pirate
 git commit -m "Remove dry compiled executable from git index"
 git push
