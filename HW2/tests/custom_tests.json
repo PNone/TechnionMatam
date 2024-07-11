@@ -98,6 +98,46 @@
       },
       "output_file": "mataMvidiaE2E.out",
       "expected_output_file": "mataMvidiaE2E.expected"
+    },
+    {
+      "name": "Matrix Initialization Test (Thanks Nir :))",
+      "template": "hw2",
+      "params": {
+        "testName": "matrixInit",
+        "out": "matrixInit.out"
+      },
+      "output_file": "matrixInit.out",
+      "expected_output_file": "matrixInit.expected"
+    },
+    {
+      "name": "Mata Mvidia Operations Test (Thanks Nir :))",
+      "template": "hw2",
+      "params": {
+        "testName": "mataMvidiaOperations",
+        "out": "mataMvidiaOperations.out"
+      },
+      "output_file": "mataMvidiaOperations.out",
+      "expected_output_file": "mataMvidiaOperations.expected"
+    },
+    {
+      "name": "Matrix Transformations Test (Thanks Nir :))",
+      "template": "hw2",
+      "params": {
+        "testName": "matrixTransformations",
+        "out": "matrixTransformations.out"
+      },
+      "output_file": "matrixTransformations.out",
+      "expected_output_file": "matrixTransformations.expected"
+    },
+    {
+      "name": "Non-Square Matrix Transformations Test (Thanks Nir :))",
+      "template": "hw2",
+      "params": {
+        "testName": "nonSquareMatrixTransformations",
+        "out": "nonSquareMatrixTransformations.out"
+      },
+      "output_file": "nonSquareMatrixTransformations.out",
+      "expected_output_file": "nonSquareMatrixTransformations.expected"
     }
   ]
 }
