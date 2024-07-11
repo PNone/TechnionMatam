@@ -16,7 +16,7 @@ void constructorErrorSize1(std::ostream &out);
 void constructorErrorSize2(std::ostream &out);
 void constructorErrorSize3(std::ostream &out);
 void constructorErrorSize4(std::ostream &out);
-void mataMvidiaE2e(std::ostream &out);
+void mataMvidiaE2E(std::ostream &out);
 
 
 #define ASSERT_TEST(expr)                                                      \
@@ -56,8 +56,8 @@ int main(int argc, char **argv) {
     if (testName == "constructorErrorSize4") {
         constructorErrorSize4(std::cout);
     }
-    if (testName == "mataMvidiaE2e") {
-        mataMvidiaE2e(std::cout);
+    if (testName == "mataMvidiaE2E") {
+        mataMvidiaE2E(std::cout);
     }
 
     return 0;
@@ -221,7 +221,7 @@ void constructorErrorSize4(std::ostream &out) {
     c(-1, 3);
 }
 
-void mataMvidiaE2e(std::ostream &out) {
+void mataMvidiaE2E(std::ostream &out) {
     Matrix a(3, 3);
     a(0, 0) = 1;
     a(0, 1) = 2;

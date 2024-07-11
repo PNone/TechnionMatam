@@ -93,11 +93,11 @@
       "name": "Mata Mvidia End to End (Thanks Linoy :))",
       "template": "hw2",
       "params": {
-        "testName": "mataMvidiaE2e",
-        "out": "mataMvidiaE2e.out"
+        "testName": "mataMvidiaE2E",
+        "out": "mataMvidiaE2E.out"
       },
-      "output_file": "mataMvidiaE2e.out",
-      "expected_output_file": "mataMvidiaE2e.expected"
+      "output_file": "mataMvidiaE2E.out",
+      "expected_output_file": "mataMvidiaE2E.expected"
     }
   ]
 }
