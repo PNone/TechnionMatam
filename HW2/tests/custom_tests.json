@@ -208,6 +208,16 @@
       },
       "output_file": "multiplyAssignmentZeroResult.out",
       "expected_output_file": "multiplyAssignmentZeroResult.expected"
+    },
+    {
+      "name": "Zero Matrix Tests",
+      "template": "hw2",
+      "params": {
+        "testName": "testZeroMatrix",
+        "out": "zeroMatrix.out"
+      },
+      "output_file": "zeroMatrix.out",
+      "expected_output_file": "zeroMatrix.expected"
     }
   ]
 }

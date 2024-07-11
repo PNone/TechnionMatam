@@ -1,0 +1,96 @@
+Constructor: 
+|0|0|
+|0|0|
+
+
+
+Copy constructor: 
+|0|0|
+|0|0|
+
+
+
+Assignment operator: 
+|0|0|
+|0|0|
+
+
+
+Rotate clockwise: 
+|0|0|
+|0|0|
+
+
+Rotate counter-clockwise: 
+|0|0|
+|0|0|
+
+
+Transpose: 
+|0|0|
+|0|0|
+
+
+Negation operator
+|0|0|
+|0|0|
+
+
+Addition operator: 
+|0|0|
+|0|0|
+
+
+Subtraction operator: 
+|0|0|
+|0|0|
+
+
+Multiplication operator: 
+|0|0|
+|0|0|
+
+
+
+Scalar multiplication (left): 
+|0|0|
+|0|0|
+
+
+
+Scalar multiplication (right): 
+|0|0|
+|0|0|
+
+
+
+Addition assignment:
+|0|0|
+|0|0|
+
+
+
+Subtraction assignment: 
+|0|0|
+|0|0|
+
+
+
+Multiplication assignment: 
+|0|0|
+|0|0|
+
+
+
+Scalar multiplication assignment: 
+|0|0|
+|0|0|
+
+
+
+matrix 1 equal matrix 2: 1
+matrix 1 equal matrix 3: 0
+matrix 0x0 equal matrix 0x2: 0
+matrix 1 not equal matrix 2: 0
+matrix 1 not equal matrix 3: 1
+matrix 0x0 not equal matrix 0x2: 1
