@@ -21,9 +21,11 @@ Rotate clockwise:
 |0|0|
 
 
+
 Rotate counter-clockwise:
 |0|0|
 |0|0|
+
 
 
 Transpose:
@@ -31,14 +33,17 @@ Transpose:
 |0|0|
 
 
+
 Negation operator:
 |0|0|
 |0|0|
 
 
+
 Addition operator:
 |0|0|
 |0|0|
+
 
 
 Subtraction operator:

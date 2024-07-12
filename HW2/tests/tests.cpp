@@ -256,8 +256,6 @@ void constructorAssignment(std::ostream &out) {
 }
 
 void constructorErrorSize(std::ostream &out) {
-    Matrix a;
-    out << a << endl;
     //error size
     Matrix b(-1, 0);
 }
@@ -813,7 +811,7 @@ bool testZeroMatrix(std::ostream &out) {
     out << "Rotate clockwise:" << endl;
     out << rotatedCW1 << endl;
     out << rotatedCW0x0 << endl;
-    // out << rotatedCW0x2 << endl;
+    out << rotatedCW0x2 << endl;
 
     // Rotate counter-clockwise test
     Matrix rotatedCCW1 = zeroMatrix1.rotateCounterClockwise();
@@ -822,7 +820,7 @@ bool testZeroMatrix(std::ostream &out) {
     out << "Rotate counter-clockwise:" << endl;
     out << rotatedCCW1 << endl;
     out << rotatedCCW0x0 << endl;
-    // out << rotatedCCW0x2 << endl;
+    out << rotatedCCW0x2 << endl;
 
     // Transpose test
     Matrix transposed1 = zeroMatrix1.transpose();
@@ -831,7 +829,7 @@ bool testZeroMatrix(std::ostream &out) {
     out << "Transpose:" << endl;
     out << transposed1 << endl;
     out << transposed0x0 << endl;
-    // out << transposed0x2 << endl;
+    out << transposed0x2 << endl;
 
     // Negation operator test
     Matrix negated1 = -zeroMatrix1;
@@ -840,7 +838,7 @@ bool testZeroMatrix(std::ostream &out) {
     out << "Negation operator:" << endl;
     out << negated1 << endl;
     out << negated0x0 << endl;
-    // out << negated0x2 << endl;
+    out << negated0x2 << endl;
 
     // Addition operator test
     Matrix zeroMatrix2(2, 2);
@@ -850,7 +848,7 @@ bool testZeroMatrix(std::ostream &out) {
     out << "Addition operator:" << endl;
     out << sum1 << endl;
     out << sum0x0 << endl;
-    // out << sum0x2 << endl;
+    out << sum0x2 << endl;
 
     // Subtraction operator test
     Matrix difference1 = zeroMatrix1 - zeroMatrix2;
