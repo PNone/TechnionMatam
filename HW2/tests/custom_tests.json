@@ -2,7 +2,7 @@
   "templates": {
     "hw2": ":::testName::: > :::out:::",
     "hw2Error": ":::testName::: 2> :::out:::",
-    "hw2StdAndError": ":::testName::: &> :::out:::"
+    "hw2OutAndError": ":::testName::: 2>&1 > :::out:::"
   },
   "tests": [
     {
@@ -218,6 +218,26 @@
       },
       "output_file": "zeroMatrix.out",
       "expected_output_file": "zeroMatrix.expected"
+    },
+    {
+      "name": "Advanced: m += m and m + m Tests",
+      "template": "hw2OutAndError",
+      "params": {
+        "testName": "matrixPlusItself",
+        "out": "matrixPlusItself.out"
+      },
+      "output_file": "matrixPlusItself.out",
+      "expected_output_file": "matrixPlusItself.expected"
+    },
+    {
+      "name": "Advanced: m *= m and m * m Tests",
+      "template": "hw2OutAndError",
+      "params": {
+        "testName": "matrixMultiplyItself",
+        "out": "matrixMultiplyItself.out"
+      },
+      "output_file": "matrixMultiplyItself.out",
+      "expected_output_file": "matrixMultiplyItself.expected"
     }
   ]
 }

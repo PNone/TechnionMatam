@@ -49,6 +49,10 @@ void testMultiplicationAssignmentZeroResult(std::ostream &out);
 
 bool testZeroMatrix(std::ostream &out);
 
+void testMatrixPlusItself(std::ostream &out);
+
+void testMatrixMultiplyItself(std::ostream &out);
+
 
 #define ASSERT_TEST(expr)                                                      \
 do {                                                                           \
@@ -125,6 +129,12 @@ int main(int argc, char **argv) {
     }
     if (testName == "testZeroMatrix") {
         testZeroMatrix(std::cout);
+    }
+    if (testName == "matrixPlusItself") {
+        testMatrixPlusItself(std::cout);
+    }
+    if (testName == "matrixMultiplyItself") {
+        testMatrixMultiplyItself(std::cout);
     }
 
     return 0;
@@ -941,4 +951,49 @@ bool testZeroMatrix(std::ostream &out) {
     out << "matrix 0x0 not equal matrix 0x2: " << is0x0NotEqual0x2 << endl;
 
     return true;
+}
+
+void testMatrixPlusItself(std::ostream &out) {
+    Matrix m(3, 2);
+
+    // Initialize m as a 3x2 matrix
+    m(0, 0) = 1;
+    m(0, 1) = 2;
+    m(1, 0) = 3;
+    m(1, 1) = 4;
+    m(2, 0) = 5;
+    m(2, 1) = 6;
+
+    out << "m:" << endl;
+    out << m << endl;
+
+    Matrix mPlusItself = m + m;
+    out << "m + m:" << endl;
+    out << mPlusItself << endl;
+    out << "m += m:" << endl;
+    m += m;
+    out << m << endl;
+}
+
+void testMatrixMultiplyItself(std::ostream &out) {
+    Matrix m(3, 3);
+    // Initialize m as a 3x3 matrix
+    m(0, 0) = 1;
+    m(0, 1) = 2;
+    m(0, 2) = 3;
+    m(1, 0) = 4;
+    m(1, 1) = 5;
+    m(1, 2) = 6;
+    m(2, 0) = 7;
+    m(2, 1) = 8;
+    m(2, 2) = 9;
+
+    out << "m:" << endl;
+    out << m << endl;
+    Matrix mMultiplyItself = m * m;
+    out << "m * m:" << endl;
+    out << mMultiplyItself << endl;
+    m *= m;
+    out << "m *= m:" << endl;
+    out << m << endl;
 }
