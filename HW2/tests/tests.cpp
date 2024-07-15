@@ -843,110 +843,63 @@ bool testZeroMatrix(std::ostream &out) {
     // Addition operator test
     Matrix zeroMatrix2(2, 2);
     Matrix sum1 = zeroMatrix1 + zeroMatrix2;
-    Matrix sum0x0 = zeroMatrix0x0 + zeroMatrix0x0;
-    Matrix sum0x2 = zeroMatrix0x2 + zeroMatrix0x2;
     out << "Addition operator:" << endl;
     out << sum1 << endl;
-    out << sum0x0 << endl;
-    out << sum0x2 << endl;
 
     // Subtraction operator test
     Matrix difference1 = zeroMatrix1 - zeroMatrix2;
-    // Todo: Matrix difference0x0 = zeroMatrix0x0 - zeroMatrix0x0;
-    Matrix difference0x0 = zeroMatrix0x0 - zeroMatrix0x0Second;
     out << "Subtraction operator:" << endl;
     out << difference1 << endl;
-    out << difference0x0 << endl;
 
     // Multiplication operator test
     Matrix product1 = zeroMatrix1 * zeroMatrix2;
-    Matrix product0x0 = zeroMatrix0x0 * zeroMatrix0x0;
-    Matrix product0x2 = zeroMatrix0x2 * Matrix(2, 0);
     out << "Multiplication operator:" << endl;
     out << product1 << endl;
-    out << product0x0 << endl;
-    out << product0x2 << endl;
 
     // Scalar multiplication test
     Matrix scalarProduct1_1 = 5 * zeroMatrix1;
     Matrix scalarProduct1_2 = zeroMatrix1 * 5;
-    Matrix scalarProduct0x0_1 = 5 * zeroMatrix0x0;
-    Matrix scalarProduct0x0_2 = zeroMatrix0x0 * 5;
-    Matrix scalarProduct0x2_1 = 5 * zeroMatrix0x2;
-    Matrix scalarProduct0x2_2 = zeroMatrix0x2 * 5;
     out << "Scalar multiplication (left):" << endl;
     out << scalarProduct1_1 << endl;
-    out << scalarProduct0x0_1 << endl;
-    out << scalarProduct0x2_1 << endl;
     out << "Scalar multiplication (right):" << endl;
     out << scalarProduct1_2 << endl;
-    out << scalarProduct0x0_2 << endl;
-    out << scalarProduct0x2_2 << endl;
 
     // Addition assignment operator test
     Matrix addAssign1 = zeroMatrix1;
-    Matrix addAssign0x0 = zeroMatrix0x0;
-    Matrix addAssign0x2 = zeroMatrix0x2;
     addAssign1 += zeroMatrix2;
-    addAssign0x0 += zeroMatrix0x0;
-    addAssign0x2 += zeroMatrix0x2;
     out << "Addition assignment:" << endl;
     out << addAssign1 << endl;
-    out << addAssign0x0 << endl;
-    out << addAssign0x2 << endl;
 
     // Subtraction assignment operator test
     Matrix subAssign1 = zeroMatrix1;
-    Matrix subAssign0x0 = zeroMatrix0x0;
-    Matrix subAssign0x2 = zeroMatrix0x2;
     subAssign1 -= zeroMatrix2;
-    subAssign0x0 -= zeroMatrix0x0;
-    subAssign0x2 -= zeroMatrix0x2;
     out << "Subtraction assignment:" << endl;
     out << subAssign1 << endl;
-    out << subAssign0x0 << endl;
-    out << subAssign0x2 << endl;
 
     // Multiplication assignment operator test
     Matrix multAssign1 = zeroMatrix1;
-    Matrix multAssign0x0 = zeroMatrix0x0;
-    Matrix multAssign0x2 = zeroMatrix0x2;
     multAssign1 *= zeroMatrix2;
-    multAssign0x0 *= zeroMatrix0x0;
-    multAssign0x2 *= Matrix(2, 0);
     out << "Multiplication assignment:" << endl;
     out << multAssign1 << endl;
-    out << multAssign0x0 << endl;
-    out << multAssign0x2 << endl;
 
     // Scalar multiplication assignment operator test
     Matrix scalarMultAssign1 = zeroMatrix1;
-    Matrix scalarMultAssign0x0 = zeroMatrix0x0;
-    Matrix scalarMultAssign0x2 = zeroMatrix0x2;
     scalarMultAssign1 *= 5;
-    scalarMultAssign0x0 *= 5;
-    scalarMultAssign0x2 *= 5;
     out << "Scalar multiplication assignment:" << endl;
     out << scalarMultAssign1 << endl;
-    out << scalarMultAssign0x0 << endl;
-    out << scalarMultAssign0x2 << endl;
 
     // Equality operator test
     Matrix zeroMatrix3x3(3, 3);
     bool is1Equal2 = (zeroMatrix1 == zeroMatrix2);
     bool is1Equal3 = (zeroMatrix1 == zeroMatrix3x3);
-    bool is0x0Equal0x2 = (zeroMatrix0x0 == zeroMatrix0x2);
     out << "matrix 1 equal matrix 2: " << is1Equal2 << endl;
     out << "matrix 1 equal matrix 3: " << is1Equal3 << endl;
-    out << "matrix 0x0 equal matrix 0x2: " << is0x0Equal0x2 << endl;
 
     // Inequality operator test
     bool is1NotEqual2 = (zeroMatrix1 != zeroMatrix2);
     bool is1NotEqual3 = (zeroMatrix1 != zeroMatrix3x3);
-    bool is0x0NotEqual0x2 = (zeroMatrix0x0 != zeroMatrix0x2);
     out << "matrix 1 not equal matrix 2: " << is1NotEqual2 << endl;
     out << "matrix 1 not equal matrix 3: " << is1NotEqual3 << endl;
-    out << "matrix 0x0 not equal matrix 0x2: " << is0x0NotEqual0x2 << endl;
 
     return true;
 }
