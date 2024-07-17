@@ -53,6 +53,8 @@ void testMatrixPlusItself(std::ostream &out);
 
 void testMatrixMultiplyItself(std::ostream &out);
 
+void testMatamvidiaCopiesCtorParams(std::ostream &out);
+
 
 #define ASSERT_TEST(expr)                                                      \
 do {                                                                           \
@@ -135,6 +137,9 @@ int main(int argc, char **argv) {
     }
     if (testName == "matrixMultiplyItself") {
         testMatrixMultiplyItself(std::cout);
+    }
+    if (testName == "matamvidiaCopiesCtorParams") {
+        testMatamvidiaCopiesCtorParams(std::cout);
     }
 
     return 0;
@@ -947,4 +952,38 @@ void testMatrixMultiplyItself(std::ostream &out) {
     m *= m;
     out << "m *= m:" << endl;
     out << m << endl;
+}
+
+void testMatamvidiaCopiesCtorParams(std::ostream &out) {
+    Matrix m(3, 3);
+    // Initialize m as a 3x3 matrix
+    m(0, 0) = 1;
+    m(0, 1) = 2;
+    m(0, 2) = 3;
+    m(1, 0) = 4;
+    m(1, 1) = 5;
+    m(1, 2) = 6;
+    m(2, 0) = 7;
+    m(2, 1) = 8;
+    m(2, 2) = 9;
+
+    string *name = new string("may leak due to strings");
+    string *author = new string("oopsie");
+    Matrix matrices[] = {m};
+
+    MataMvidia matam = MataMvidia(*name, *author, matrices, 1);
+    delete name;
+    delete author;
+    out << matam;
+
+    name = new string("may leak due to strings and matrix");
+    author = new string("oopsie");
+
+    Matrix *m2 = new Matrix(m);
+    Matrix matrices2[] = {*m2};
+    MataMvidia matam2 = MataMvidia(*name, *author, matrices2, 1);
+    delete name;
+    delete author;
+    delete m2;
+    out << matam2;
 }

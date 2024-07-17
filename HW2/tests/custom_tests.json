@@ -238,6 +238,16 @@
       },
       "output_file": "matrixMultiplyItself.out",
       "expected_output_file": "matrixMultiplyItself.expected"
+    },
+    {
+      "name": "Test Matamvidia constructor params copied by value",
+      "template": "hw2OutAndError",
+      "params": {
+        "testName": "matamvidiaCopiesCtorParams",
+        "out": "matamvidiaCopiesCtorParams.out"
+      },
+      "output_file": "matamvidiaCopiesCtorParams.out",
+      "expected_output_file": "matamvidiaCopiesCtorParams.expected"
     }
   ]
 }
