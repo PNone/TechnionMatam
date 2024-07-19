@@ -6,7 +6,7 @@
     "tests": [
       {
         "name": "Example Test :::placeholder:::",
-        "template": "hw2Error",
+        "template": "hw3OutAndError",
         "params": {
           "testName": ":::placeholder:::",
           "out": "test:::placeholder:::.out"
