@@ -1,0 +1,15 @@
+Running testTaskManagerPrintTasksByType ... 
+Task ID: 8, Priority: 7, Type: Development, Description: Implement new feature
+Task ID: 12, Priority: 6, Type: Development, Description: Fix bug in UI
+Task ID: 1, Priority: 5, Type: Development, Description: Refactor core module
+
+Task ID: 8, Priority: 57, Type: Development, Description: Implement new feature
+Task ID: 12, Priority: 56, Type: Development, Description: Fix bug in UI
+Task ID: 1, Priority: 55, Type: Development, Description: Refactor core module
+
+Task ID: 11, Priority: 100, Type: Testing, Description: stream
+Task ID: 6, Priority: 8, Type: Testing, Description: Integration testing
+Task ID: 10, Priority: 0, Type: Testing, Description: Write unit tests
+
+[OK]
+

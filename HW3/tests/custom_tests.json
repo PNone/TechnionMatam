@@ -1,0 +1,23 @@
+{
+    "templates": {
+      "hw3": ":::testName::: > :::out:::",
+      "hw3OutAndError": ":::testName::: 2>&1 > :::out:::"
+    },
+    "tests": [
+      {
+        "name": "Example Test :::placeholder:::",
+        "template": "hw2Error",
+        "params": {
+          "testName": ":::placeholder:::",
+          "out": "test:::placeholder:::.out"
+        },
+        "output_file": "test:::placeholder:::.out",
+        "expected_output_file": "test:::placeholder:::.expected",
+        "params_range": {
+            "first": 1,
+            "last": 6
+        },
+        "run_leaks": true
+      }
+    ]
+  }
