@@ -424,6 +424,57 @@ bool testTaskManagerAssignTask() {
     return true;
 }
 
+bool testAssignmentOperatorExceptionSafety() {
+    try {
+        ExceptionThrowingType x(1);
+        x.zeroCounter();
+        x.changeState(false);
+        SortedList<ExceptionThrowingType> list;
+        list.insert(ExceptionThrowingType(1));
+        list.insert(ExceptionThrowingType(2));
+
+        // Force an exception during the copy constructor
+        // add flag
+        SortedList<ExceptionThrowingType> copyByAssignment;
+        x.changeState(true);
+        copyByAssignment = list; // Should throw std::bad_alloc
+        return false;            // If no exception is thrown, the test fails
+    }
+    catch (const std::bad_alloc &) {
+        // Expected exception was thrown
+    }
+    catch (...) {
+        return false; // Unexpected exception
+    }
+
+    return true;
+}
+
+bool testDeleteFirstElementOfEmpty() {
+    // Test default constructor
+    SortedList<int> list;
+    if (list.length() != 0) {
+        return false;
+    }
+
+    // Attempt to remove using the start iterator of an empty list (which should be invalid)
+    try {
+        auto itStart = list.begin();
+        list.remove(itStart); // This should not throw an exception but should handle gracefully
+        // No exception expected, so no assert here
+    }
+    catch (...) {
+        return false; // If any exception is thrown, the test should fail
+    }
+
+    // Ensure 0 length remains
+    if (list.length() != 0) {
+        return false;
+    }
+
+    return true;
+}
+
 
 // end of tests
 
@@ -440,7 +491,9 @@ bool testTaskManagerAssignTask() {
     X(testTaskManager)                       \
     X(testCopyConstructorExceptionSafety)    \
     X(testTaskManagerAssignTask)             \
-    X(testTaskManagerPrintTasksByType)
+    X(testTaskManagerPrintTasksByType)       \
+    X(testAssignmentOperatorExceptionSafety) \
+    X(testDeleteFirstElementOfEmpty)
 
 
 testFunc tests[] = {
