@@ -537,6 +537,10 @@ bool testDuplicateElementsArePossible1() {
         return false;
     }
 
+    for (const int item: list) {
+        cout << item << endl;
+    }
+
     return true;
 }
 
@@ -599,6 +603,10 @@ bool testDuplicateElementsArePossible2() {
     }
     if (list.length() != 6) {
         return false;
+    }
+
+    for (const string &item: list) {
+        cout << item << endl;
     }
 
     return true;
