@@ -1,8 +1,8 @@
 Running testDuplicateElementsArePossible2 ... 
-aa
-aa
-b
+d
+d
 ccc
-d
-d
+b
+aa
+aa
 [OK]
