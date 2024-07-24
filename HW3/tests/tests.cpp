@@ -476,6 +476,135 @@ bool testDeleteFirstElementOfEmpty() {
 }
 
 
+bool testDuplicateElementsArePossible1() {
+    // Test default constructor
+    SortedList<int> list;
+    if (list.length() != 0) {
+        return false;
+    }
+
+    // Test insert and length
+    list.insert(5);
+    list.insert(3);
+    list.insert(8);
+    list.insert(5);
+    list.insert(10);
+    if (list.length() != 5) {
+        return false;
+    }
+
+    // Test copy constructor
+    SortedList<int> copy(list);
+    if (copy.length() != 5) {
+        return false;
+    }
+
+    // Check copied elements
+    auto it_copy = copy.begin();
+    auto it_list = list.begin();
+    for (int i = 0; i < list.length(); ++i) {
+        if ((*it_copy != *it_list) || (&(*it_copy) == &(*it_list))) {
+            return false;
+        }
+        ++it_copy;
+        ++it_list;
+    }
+
+    // Test assignment operator
+    SortedList<int> another_list;
+    another_list = list;
+    if (another_list.length() != 5) {
+        return false;
+    }
+
+    // Check assigned elements
+    it_list = list.begin();
+    auto it_another_list = another_list.begin();
+    for (int i = 0; i < list.length(); ++i) {
+        if ((*it_another_list != *it_list) || (&(*it_another_list) == &(*it_list))) {
+            return false;
+        }
+        ++it_another_list;
+        ++it_list;
+    }
+
+    // Ensure deep copy
+    list.insert(10);
+    if (another_list.length() != 5) {
+        return false;
+    }
+    if (list.length() != 6) {
+        return false;
+    }
+
+    return true;
+}
+
+bool testDuplicateElementsArePossible2() {
+    // Test default constructor
+    SortedList<string> list;
+    if (list.length() != 0) {
+        return false;
+    }
+
+    // Test insert and length
+    list.insert("aa");
+    list.insert("b");
+    list.insert("ccc");
+    list.insert("aa");
+    list.insert("d");
+    if (list.length() != 5) {
+        return false;
+    }
+
+    // Test copy constructor
+    SortedList<string> copy(list);
+    if (copy.length() != 5) {
+        return false;
+    }
+
+    // Check copied elements
+    auto it_copy = copy.begin();
+    auto it_list = list.begin();
+    for (int i = 0; i < list.length(); ++i) {
+        if ((*it_copy != *it_list) || (&(*it_copy) == &(*it_list))) {
+            return false;
+        }
+        ++it_copy;
+        ++it_list;
+    }
+
+    // Test assignment operator
+    SortedList<string> another_list;
+    another_list = list;
+    if (another_list.length() != 5) {
+        return false;
+    }
+
+    // Check assigned elements
+    it_list = list.begin();
+    auto it_another_list = another_list.begin();
+    for (int i = 0; i < list.length(); ++i) {
+        if ((*it_another_list != *it_list) || (&(*it_another_list) == &(*it_list))) {
+            return false;
+        }
+        ++it_another_list;
+        ++it_list;
+    }
+
+    // Ensure deep copy
+    list.insert("d");
+    if (another_list.length() != 5) {
+        return false;
+    }
+    if (list.length() != 6) {
+        return false;
+    }
+
+    return true;
+}
+
+
 // end of tests
 
 
@@ -493,7 +622,9 @@ bool testDeleteFirstElementOfEmpty() {
     X(testTaskManagerAssignTask)             \
     X(testTaskManagerPrintTasksByType)       \
     X(testAssignmentOperatorExceptionSafety) \
-    X(testDeleteFirstElementOfEmpty)
+    X(testDeleteFirstElementOfEmpty)         \
+    X(testDuplicateElementsArePossible1)     \
+    X(testDuplicateElementsArePossible2)
 
 
 testFunc tests[] = {
