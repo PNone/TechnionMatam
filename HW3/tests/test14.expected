@@ -1,0 +1,18 @@
+Running testOperatorChaining ... 
+Filter for words starting with 'z' (should be empty):
+
+Length: 0
+
+Apply uppercase to empty list:
+
+Length: 0
+
+Filter and apply chaining - filter, apply, filter:
+ELDERBERRY BANANA 
+Length: 2
+
+Multiple applies:
+elderberry123 date123 cherry123 banana123 apple123 
+Length: 5
+
+[OK]

@@ -1,0 +1,11 @@
+Running testMemoryIndependent ... 
+Initial list: 
+17 
+
+List after variable delete: 
+17 
+
+List after insertions: 
+50 17 10 
+
+[OK]

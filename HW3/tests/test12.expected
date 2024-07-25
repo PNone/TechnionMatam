@@ -1,0 +1,37 @@
+Running testsBumpPriorityByTypeRange ... 
+Initial state:
+Task ID: 4, Priority: 100, Type: Maintenance, Description: Super important task
+Task ID: 1, Priority: 80, Type: Testing, Description: Task 2
+Task ID: 2, Priority: 30, Type: Maintenance, Description: Task 3
+Task ID: 0, Priority: 1, Type: Maintenance, Description: Task 1
+Task ID: 3, Priority: 0, Type: Testing, Description: Negative task
+
+After bumping Maintenance by -10:
+Task ID: 4, Priority: 100, Type: Maintenance, Description: Super important task
+Task ID: 1, Priority: 80, Type: Testing, Description: Task 2
+Task ID: 2, Priority: 30, Type: Maintenance, Description: Task 3
+Task ID: 0, Priority: 1, Type: Maintenance, Description: Task 1
+Task ID: 3, Priority: 0, Type: Testing, Description: Negative task
+
+After bumping Testing by 30:
+Task ID: 4, Priority: 100, Type: Maintenance, Description: Super important task
+Task ID: 1, Priority: 100, Type: Testing, Description: Task 2
+Task ID: 3, Priority: 30, Type: Testing, Description: Negative task
+Task ID: 2, Priority: 30, Type: Maintenance, Description: Task 3
+Task ID: 0, Priority: 1, Type: Maintenance, Description: Task 1
+
+After bumping Maintenance by 150:
+Task ID: 0, Priority: 100, Type: Maintenance, Description: Task 1
+Task ID: 4, Priority: 100, Type: Maintenance, Description: Super important task
+Task ID: 1, Priority: 100, Type: Testing, Description: Task 2
+Task ID: 2, Priority: 100, Type: Maintenance, Description: Task 3
+Task ID: 3, Priority: 30, Type: Testing, Description: Negative task
+
+After bumping Maintenance by 10 (should already be at 100):
+Task ID: 0, Priority: 100, Type: Maintenance, Description: Task 1
+Task ID: 4, Priority: 100, Type: Maintenance, Description: Super important task
+Task ID: 1, Priority: 100, Type: Testing, Description: Task 2
+Task ID: 2, Priority: 100, Type: Maintenance, Description: Task 3
+Task ID: 3, Priority: 30, Type: Testing, Description: Negative task
+
+[OK]
