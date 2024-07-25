@@ -19,12 +19,12 @@ Task ID: 3, Priority: 40, Type: Testing, Description: Negative task
 Task ID: 2, Priority: 30, Type: Maintenance, Description: Task 3
 Task ID: 0, Priority: 1, Type: Maintenance, Description: Task 1
 
-After bumping Maintenance by 150:
+After bumping Testing by 150:
 Task ID: 3, Priority: 100, Type: Testing, Description: Negative task
 Task ID: 2, Priority: 30, Type: Maintenance, Description: Task 3
 Task ID: 0, Priority: 1, Type: Maintenance, Description: Task 1
 
-After bumping Maintenance by 10 (should already be at 100):
+After bumping Testing by 10 (should already be at 100):
 Task ID: 3, Priority: 100, Type: Testing, Description: Negative task
 Task ID: 2, Priority: 30, Type: Maintenance, Description: Task 3
 Task ID: 0, Priority: 1, Type: Maintenance, Description: Task 1
