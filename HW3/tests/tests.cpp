@@ -671,9 +671,9 @@ bool testsBumpPriorityByTypeRange() {
     cout << endl;
 
     // Test bumping to just reach 100
-    cout << "After bumping Testing by 30:" << endl;
+    cout << "After bumping Testing by 40:" << endl;
     manager.completeTask("Bob");
-    manager.bumpPriorityByType(TaskType::Testing, 30);
+    manager.bumpPriorityByType(TaskType::Testing, 40);
     manager.printAllTasks();
     cout << endl;
 
