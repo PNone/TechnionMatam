@@ -37,7 +37,13 @@ typedef bool (*testFunc)(void);
     } while (0)
 
 
-
+template<typename T>
+void printList(const mtm::SortedList <T> &list, std::ostream &os = std::cout) {
+    for (auto it = list.begin(); it != list.end(); ++it) {
+        os << *it << " ";
+    }
+    os << std::endl;
+}
 
 
 // tests
@@ -314,14 +320,14 @@ bool testCopyConstructorExceptionSafety() {
         ExceptionThrowingType x(1);
         x.zeroCounter();
         x.changeState(false);
-        SortedList<ExceptionThrowingType> list;
+        SortedList <ExceptionThrowingType> list;
         list.insert(ExceptionThrowingType(1));
         list.insert(ExceptionThrowingType(2));
 
         // Force an exception during the copy constructor
         // add flag
         x.changeState(true);
-        SortedList<ExceptionThrowingType> copy(list); // Should throw std::bad_alloc
+        SortedList <ExceptionThrowingType> copy(list); // Should throw std::bad_alloc
         return false;                                 // If no exception is thrown, the test fails
     }
     catch (const std::bad_alloc &) {
@@ -429,13 +435,13 @@ bool testAssignmentOperatorExceptionSafety() {
         ExceptionThrowingType x(1);
         x.zeroCounter();
         x.changeState(false);
-        SortedList<ExceptionThrowingType> list;
+        SortedList <ExceptionThrowingType> list;
         list.insert(ExceptionThrowingType(1));
         list.insert(ExceptionThrowingType(2));
 
         // Force an exception during the copy constructor
         // add flag
-        SortedList<ExceptionThrowingType> copyByAssignment;
+        SortedList <ExceptionThrowingType> copyByAssignment;
         x.changeState(true);
         copyByAssignment = list; // Should throw std::bad_alloc
         return false;            // If no exception is thrown, the test fails
@@ -546,7 +552,7 @@ bool testDuplicateElementsArePossible1() {
 
 bool testDuplicateElementsArePossible2() {
     // Test default constructor
-    SortedList<string> list;
+    SortedList <string> list;
     if (list.length() != 0) {
         return false;
     }
@@ -562,7 +568,7 @@ bool testDuplicateElementsArePossible2() {
     }
 
     // Test copy constructor
-    SortedList<string> copy(list);
+    SortedList <string> copy(list);
     if (copy.length() != 5) {
         return false;
     }
@@ -579,7 +585,7 @@ bool testDuplicateElementsArePossible2() {
     }
 
     // Test assignment operator
-    SortedList<string> another_list;
+    SortedList <string> another_list;
     another_list = list;
     if (another_list.length() != 5) {
         return false;
@@ -612,6 +618,260 @@ bool testDuplicateElementsArePossible2() {
     return true;
 }
 
+bool testMemoryIndependent() {
+    SortedList<int> list;
+
+    // Create a variable on the heap
+    int *heapVariable = new int(17);
+
+    // Insert the value into the list
+    list.insert(*heapVariable);
+
+    // Verify the list contains the value
+    cout << "Initial list: " << endl;
+    printList(list);
+    cout << endl;
+
+    // Delete the original variable
+    delete heapVariable;
+    // Verify the list still contains the value
+    cout << "List after variable delete: " << endl;
+    printList(list);
+    cout << endl;
+
+    // Try to modify the list to ensure it's still functional
+    list.insert(10);
+    list.insert(50);
+    cout << "List after insertions: " << endl;
+    printList(list);
+    cout << endl;
+
+    return true;
+}
+
+bool testsBumpPriorityByTypeRange() {
+    TaskManager manager;
+
+    // Set up initial tasks
+    manager.assignTask("Alice", Task(1, TaskType::Maintenance, "Task 1"));
+    manager.assignTask("Bob", Task(80, TaskType::Testing, "Task 2"));
+    manager.assignTask("Charlie", Task(30, TaskType::Maintenance, "Task 3"));
+    manager.assignTask("Alice", Task(-2, TaskType::Testing, "Negative task"));
+    manager.assignTask("Bob", Task(200, TaskType::Maintenance, "Super important task"));
+
+
+    cout << "Initial state:" << endl;
+    manager.printAllTasks();
+    cout << endl;
+
+    // Test negative bump (should do nothing)
+    cout << "After bumping Maintenance by -10:" << endl;
+    manager.bumpPriorityByType(TaskType::Maintenance, -10);
+    manager.printAllTasks();
+    cout << endl;
+
+    // Test bumping to just reach 100
+    cout << "After bumping Testing by 30:" << endl;
+    manager.bumpPriorityByType(TaskType::Testing, 30);
+    manager.printAllTasks();
+    cout << endl;
+
+    // Test bumping by more than 100
+    cout << "After bumping Maintenance by 150:" << endl;
+    manager.bumpPriorityByType(TaskType::Maintenance, 150);
+    manager.printAllTasks();
+    cout << endl;
+
+    // Test bumping when already at 100
+    cout << "After bumping Maintenance by 10 (should already be at 100):" << endl;
+    manager.bumpPriorityByType(TaskType::Maintenance, 10);
+    manager.printAllTasks();
+    cout << endl;
+
+    return true;
+}
+
+bool testAssignOperatorExceptionSafety() {
+    ExceptionThrowingType x(1);
+    x.zeroCounter();
+    x.changeState(false);
+    SortedList <ExceptionThrowingType> originalList;
+    originalList.insert(17);
+
+    try {
+        SortedList <ExceptionThrowingType> listToCopy;
+        listToCopy.insert(ExceptionThrowingType(1));
+        listToCopy.insert(ExceptionThrowingType(2));
+
+        // Force an exception during the assign operator
+        // add flag
+        x.changeState(true);
+        originalList = listToCopy;  // Should throw std::bad_alloc.
+
+        return false; // If no exception is thrown, the test fails
+    }
+    catch (const std::bad_alloc &) {
+        // Expected exception was thrown
+        // Assert the original list is not deleted before copying is completed
+        const int listLength = originalList.length();
+        const auto firstItemValue = (*originalList.begin()).getValue();
+        cout << "Original list length: " << listLength << endl;
+        cout << "Original list first item value: " << firstItemValue << endl;
+
+        if (listLength != 1 || firstItemValue != 17) {
+            return false;
+        }
+
+    }
+    catch (...) {
+        return false; // Unexpected exception
+    }
+
+    return true;
+}
+
+bool testOperatorChaining() {
+    mtm::SortedList <string> list;
+
+    // Populate the list
+    list.insert("apple");
+    list.insert("banana");
+    list.insert("cherry");
+    list.insert("date");
+    list.insert("elderberry");
+
+    // Test 1: Empty result after filtering
+    cout << "Filter for words starting with 'z' (should be empty):" << endl;
+    const auto &result1 = list.filter([](const string &s) { return s[0] == 'z'; });
+    printList(result1);
+    cout << "Length: " << result1.length() << endl << endl;
+
+    // Test 2: Apply to empty list
+    cout << "Apply uppercase to empty list:" << endl;
+    const auto &result2 = result1.apply([](string s) {
+        for (char &c: s) { c = toupper(c); }
+        return s;
+    });
+    printList(result2);
+    cout << "Length: " << result2.length() << endl << endl;
+
+    // Test 3: Complex chaining
+    cout << "Filter and apply chaining - filter, apply, filter:" << endl;
+    const auto &result3 = list
+            .filter([](const string &s) { return s.length() > 4; })
+            .apply([](string s) {
+                for (char &c: s) { c = toupper(c); }
+                return s;
+            })
+            .filter([](const string &s) { return s[0] == 'B' || s[0] == 'E'; });
+
+    printList(result3);
+    cout << "Length: " << result3.length() << endl << endl;
+
+    // Test 4: Multiple applies
+    cout << "Multiple applies:" << endl;
+    const auto &result5 = list
+            .apply([](string s) { return s + "1"; })
+            .apply([](string s) { return s + "2"; })
+            .apply([](string s) { return s + "3"; });
+
+    printList(result5);
+    cout << "Length: " << result5.length() << endl << endl;
+
+    return true;
+}
+
+bool testCompleteTask() {
+    TaskManager manager;
+
+    // Test 1: Completing a task for a non-existent employee (should do nothing)
+    cout << "Test 1: Completing a task for a non-existent employee" << endl;
+    cout << "Before:" << endl;
+    manager.printAllEmployees();
+    manager.completeTask("NonExistentEmployee");
+    cout << "After:" << endl;
+    manager.printAllEmployees();
+    cout << endl;
+
+    // Test 2: Completing a task for an employee with no tasks
+    cout << "Test 2: Completing a task for an employee with no tasks" << endl;
+    manager.assignTask("Alice",
+                       Task(1, TaskType::Development, "Task 1")); // Add Alice to the system
+    manager.completeTask("Alice"); // Complete the only task
+    cout << "Before:" << endl;
+    manager.printAllEmployees();
+    try {
+        // Complete Task for empty employee should throw error
+        manager.completeTask("Alice");
+        cout << "After:" << endl;
+        manager.printAllEmployees();
+        return false;
+    } catch (const std::exception &e) {
+        cout << e.what() << endl;
+    }
+    cout << endl;
+
+    // Test 3: Completing tasks with different priorities
+    cout << "Test 3: Completing tasks with different priorities" << endl;
+    manager.assignTask("Bob", Task(2, TaskType::Presentation, "Low Priority"));
+    manager.assignTask("Bob", Task(37, TaskType::Development, "High Priority"));
+    manager.assignTask("Bob", Task(4, TaskType::Presentation, "Medium Priority"));
+    manager.completeTask("Bob");
+    cout << "Bob's tasks after completing highest priority task:" << endl;
+    manager.printAllTasks();
+    cout << endl;
+
+    return true;
+}
+
+bool testTaskManagerPrintMethods() {
+    TaskManager manager;
+
+    cout << "Test 1: Printing empty TaskManager" << endl;
+    cout << "printAllEmployees:" << endl;
+    manager.printAllEmployees();
+    cout << "printAllTasks:" << endl;
+    manager.printAllTasks();
+    cout << "printTasksByType (General):" << endl;
+    manager.printTasksByType(TaskType::General);
+    cout << endl;
+
+    cout << "Test 2: Basic employees and tasks" << endl;
+    manager.assignTask("Alice", Task(1, TaskType::General, "Alice's Feature"));
+    manager.assignTask("Bob", Task(2, TaskType::Presentation, "Bob's Bug"));
+    manager.assignTask("Alice", Task(3, TaskType::Research, "Alice's Development"));
+    cout << "printAllEmployees:" << endl;
+    manager.printAllEmployees();
+    cout << "printAllTasks:" << endl;
+    manager.printAllTasks();
+    cout << endl;
+
+    cout << "Test 3: Completing tasks and reprinting" << endl;
+    manager.completeTask("Alice");
+    manager.completeTask("Alice");
+    manager.completeTask("Bob");
+    cout << "printAllEmployees after completing tasks:" << endl;
+    manager.printAllEmployees();
+    cout << "printAllTasks after completing tasks:" << endl;
+    manager.printAllTasks();
+    cout << endl;
+
+    cout << "Test 4: Test priority ordering" << endl;
+    manager.assignTask("Charlie", Task(4, TaskType::Presentation, "High Priority Feature"));
+    manager.assignTask("David", Task(8, TaskType::General, "Low Priority Bug"));
+    manager.assignTask("Bob", Task(0, TaskType::General, "Bob's Bug"));
+    manager.assignTask("David", Task(1, TaskType::General, "Low Priority Bug"));
+    manager.bumpPriorityByType(TaskType::General, 2);
+    cout << "printAllEmployees:" << endl;
+    manager.printAllEmployees();
+    cout << "printAllTasks:" << endl;
+    manager.printAllTasks();
+    cout << "printTasksByType (General):" << endl;
+    manager.printTasksByType(TaskType::General);
+
+    return true;
+}
+
 
 // end of tests
 
@@ -632,7 +892,13 @@ bool testDuplicateElementsArePossible2() {
     X(testAssignmentOperatorExceptionSafety) \
     X(testDeleteFirstElementOfEmpty)         \
     X(testDuplicateElementsArePossible1)     \
-    X(testDuplicateElementsArePossible2)
+    X(testDuplicateElementsArePossible2)     \
+    X(testMemoryIndependent)                 \
+    X(testsBumpPriorityByTypeRange)          \
+    X(testAssignOperatorExceptionSafety)     \
+    X(testOperatorChaining)                  \
+    X(testCompleteTask)                      \
+    X(testTaskManagerPrintMethods)
 
 
 testFunc tests[] = {
@@ -647,14 +913,6 @@ const char *tests_names[] = {
 #undef X
 };
 using mtm::SortedList;
-
-template<typename T>
-void printList(const mtm::SortedList<T> &list, std::ostream &os = std::cout) {
-    for (auto it = list.begin(); it != list.end(); ++it) {
-        os << *it << " ";
-    }
-    os << std::endl;
-}
 
 
 int main(int argc, char **argv) {

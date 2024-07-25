@@ -1,0 +1,52 @@
+Running testTaskManagerPrintMethods ... 
+Test 1: Printing empty TaskManager
+printAllEmployees:
+printAllTasks:
+printTasksByType (General):
+
+Test 2: Basic employees and tasks
+printAllEmployees:
+Person: Alice
+Task ID: 2, Priority: 3, Type: Research, Description: Alice's Development
+Task ID: 0, Priority: 1, Type: General, Description: Alice's Feature
+
+Person: Bob
+Task ID: 1, Priority: 2, Type: Presentation, Description: Bob's Bug
+
+printAllTasks:
+Task ID: 2, Priority: 3, Type: Research, Description: Alice's Development
+Task ID: 1, Priority: 2, Type: Presentation, Description: Bob's Bug
+Task ID: 0, Priority: 1, Type: General, Description: Alice's Feature
+
+Test 3: Completing tasks and reprinting
+printAllEmployees after completing tasks:
+Person: Alice
+
+Person: Bob
+
+printAllTasks after completing tasks:
+
+Test 4: Test priority ordering
+printAllEmployees:
+Person: Alice
+
+Person: Bob
+Task ID: 5, Priority: 2, Type: General, Description: Bob's Bug
+
+Person: Charlie
+Task ID: 3, Priority: 4, Type: Presentation, Description: High Priority Feature
+
+Person: David
+Task ID: 4, Priority: 10, Type: General, Description: Low Priority Bug
+Task ID: 6, Priority: 3, Type: General, Description: Low Priority Bug
+
+printAllTasks:
+Task ID: 4, Priority: 10, Type: General, Description: Low Priority Bug
+Task ID: 3, Priority: 4, Type: Presentation, Description: High Priority Feature
+Task ID: 6, Priority: 3, Type: General, Description: Low Priority Bug
+Task ID: 5, Priority: 2, Type: General, Description: Bob's Bug
+printTasksByType (General):
+Task ID: 4, Priority: 10, Type: General, Description: Low Priority Bug
+Task ID: 6, Priority: 3, Type: General, Description: Low Priority Bug
+Task ID: 5, Priority: 2, Type: General, Description: Bob's Bug
+[OK]

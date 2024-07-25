@@ -1,0 +1,17 @@
+Running testCompleteTask ... 
+Test 1: Completing a task for a non-existent employee
+Before:
+After:
+
+Test 2: Completing a task for an employee with no tasks
+Before:
+Person: Alice
+
+No tasks assigned to this person.
+
+Test 3: Completing tasks with different priorities
+Bob's tasks after completing highest priority task:
+Task ID: 3, Priority: 4, Type: Presentation, Description: Medium Priority
+Task ID: 1, Priority: 2, Type: Presentation, Description: Low Priority
+
+[OK]

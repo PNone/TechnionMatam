@@ -15,7 +15,7 @@
       "expected_output_file": "test:::placeholder:::.expected",
       "params_range": {
         "first": 1,
-        "last": 10
+        "last": 16
       },
       "run_leaks": true
     }
