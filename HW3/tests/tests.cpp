@@ -806,7 +806,8 @@ bool testCompleteTask() {
         cout << "After:" << endl;
         manager.printAllEmployees();
         return false;
-    } catch (const std::exception &e) {
+    }
+    catch (const std::exception &e) {
         cout << e.what() << endl;
     }
     cout << endl;
