@@ -38,9 +38,17 @@ typedef bool (*testFunc)(void);
 
 
 template<typename T>
-void printList(const mtm::SortedList <T> &list, std::ostream &os = std::cout) {
+void printList(const mtm::SortedList<T> &list, std::ostream &os = std::cout) {
     for (auto it = list.begin(); it != list.end(); ++it) {
         os << *it << " ";
+    }
+    os << std::endl;
+}
+
+template<typename T>
+void printListWithNewlines(const mtm::SortedList<T> &list, std::ostream &os = std::cout) {
+    for (auto it = list.begin(); it != list.end(); ++it) {
+        os << *it << endl;
     }
     os << std::endl;
 }
@@ -320,14 +328,14 @@ bool testCopyConstructorExceptionSafety() {
         ExceptionThrowingType x(1);
         x.zeroCounter();
         x.changeState(false);
-        SortedList <ExceptionThrowingType> list;
+        SortedList<ExceptionThrowingType> list;
         list.insert(ExceptionThrowingType(1));
         list.insert(ExceptionThrowingType(2));
 
         // Force an exception during the copy constructor
         // add flag
         x.changeState(true);
-        SortedList <ExceptionThrowingType> copy(list); // Should throw std::bad_alloc
+        SortedList<ExceptionThrowingType> copy(list); // Should throw std::bad_alloc
         return false;                                 // If no exception is thrown, the test fails
     }
     catch (const std::bad_alloc &) {
@@ -435,13 +443,13 @@ bool testAssignmentOperatorExceptionSafety() {
         ExceptionThrowingType x(1);
         x.zeroCounter();
         x.changeState(false);
-        SortedList <ExceptionThrowingType> list;
+        SortedList<ExceptionThrowingType> list;
         list.insert(ExceptionThrowingType(1));
         list.insert(ExceptionThrowingType(2));
 
         // Force an exception during the copy constructor
         // add flag
-        SortedList <ExceptionThrowingType> copyByAssignment;
+        SortedList<ExceptionThrowingType> copyByAssignment;
         x.changeState(true);
         copyByAssignment = list; // Should throw std::bad_alloc
         return false;            // If no exception is thrown, the test fails
@@ -552,7 +560,7 @@ bool testDuplicateElementsArePossible1() {
 
 bool testDuplicateElementsArePossible2() {
     // Test default constructor
-    SortedList <string> list;
+    SortedList<string> list;
     if (list.length() != 0) {
         return false;
     }
@@ -568,7 +576,7 @@ bool testDuplicateElementsArePossible2() {
     }
 
     // Test copy constructor
-    SortedList <string> copy(list);
+    SortedList<string> copy(list);
     if (copy.length() != 5) {
         return false;
     }
@@ -585,7 +593,7 @@ bool testDuplicateElementsArePossible2() {
     }
 
     // Test assignment operator
-    SortedList <string> another_list;
+    SortedList<string> another_list;
     another_list = list;
     if (another_list.length() != 5) {
         return false;
@@ -697,11 +705,11 @@ bool testAssignOperatorExceptionSafety() {
     ExceptionThrowingType x(1);
     x.zeroCounter();
     x.changeState(false);
-    SortedList <ExceptionThrowingType> originalList;
+    SortedList<ExceptionThrowingType> originalList;
     originalList.insert(17);
 
     try {
-        SortedList <ExceptionThrowingType> listToCopy;
+        SortedList<ExceptionThrowingType> listToCopy;
         listToCopy.insert(ExceptionThrowingType(1));
         listToCopy.insert(ExceptionThrowingType(2));
 
@@ -733,7 +741,7 @@ bool testAssignOperatorExceptionSafety() {
 }
 
 bool testOperatorChaining() {
-    mtm::SortedList <string> list;
+    mtm::SortedList<string> list;
 
     // Populate the list
     list.insert("apple");
@@ -875,6 +883,94 @@ bool testTaskManagerPrintMethods() {
     return true;
 }
 
+bool testComplexAssignFilterOperations() {
+    mtm::SortedList<Task> list;
+
+    // Populate the list
+    Task task1 = Task(3, TaskType::Testing, "Foo with a bar");
+    Task task2 = Task(1, TaskType::Training, "I love muscles");
+    Task task3 = Task(10, TaskType::Documentation, "The happy task");
+    Task task4 = Task(20, TaskType::Presentation, "PowerPoint God");
+    Task task5 = Task(15, TaskType::Testing, "Foo without a bar");
+    Task task6 = Task(17, TaskType::Training, "I love being strong");
+    Task task7 = Task(2, TaskType::Documentation, "The sad task");
+    Task task8 = Task(40, TaskType::Presentation, "PowerPoint noob");
+    task1.setId(1);
+    task2.setId(2);
+    task3.setId(3);
+    task4.setId(4);
+    task5.setId(5);
+    task6.setId(6);
+    task7.setId(7);
+    task8.setId(8);
+    list.insert(task1);
+    list.insert(task2);
+    list.insert(task3);
+    list.insert(task4);
+    list.insert(task5);
+    list.insert(task6);
+    list.insert(task7);
+    list.insert(task8);
+    // Test 1: Initial list
+    cout << "Part 1 - initial list:" << endl;
+    printListWithNewlines(list);
+
+    const auto trainingToTesting = [](const Task &item) {
+        if (item.getType() != TaskType::Training) {
+            return item;
+        }
+        Task newTask = Task(item.getPriority(), TaskType::Testing, item.getDescription());
+        newTask.setId(item.getId());
+        return newTask;
+    };
+
+    mtm::SortedList<Task> list2 = list.apply(trainingToTesting);
+    cout << "Part 2 - change all Training to Testing:" << endl;
+    printListWithNewlines(list2);
+    mtm::SortedList<Task> list3 = list2.apply([](const Task &item) {
+        if (item.getType() != TaskType::Documentation) {
+            return item;
+        }
+        Task newTask = Task(item.getPriority(), TaskType::Training, item.getDescription());
+        newTask.setId(item.getId());
+        return newTask;
+    });
+    cout << "Part 3 - change all Documentation to Training:" << endl;
+    printListWithNewlines(list3);
+
+    mtm::SortedList<Task> list4 = list.filter([](const Task &item) {
+        return item.getType() == TaskType::Training || item.getType() == TaskType::Testing;
+    });
+    cout << "Part 4 - Test filter only Training and Testing:" << endl;
+    printListWithNewlines(list4);
+
+    mtm::SortedList<Task> list2OnlyTesting = list2.filter([](const Task &item) {
+        return item.getType() == TaskType::Testing;
+    });
+
+    mtm::SortedList<Task> list4Applied = list4.apply(trainingToTesting);
+
+    cout << "Part 5 - check items of final lists are the same:" << endl;
+    if (list2OnlyTesting.length() != list4Applied.length()) {
+        return false;
+    }
+    mtm::SortedList<Task>::ConstIterator it1 = list2OnlyTesting.begin();
+    mtm::SortedList<Task>::ConstIterator it2 = list4Applied.begin();
+    while (it1 != list2OnlyTesting.end()) {
+        if (it1.operator*().getId() == it2.operator*().getId()) {
+            cout << it1.operator*() << endl;
+        }
+        else {
+            return false;
+        }
+        ++it1;
+        ++it2;
+    }
+    cout << endl;
+
+    return true;
+}
+
 
 // end of tests
 
@@ -901,7 +997,8 @@ bool testTaskManagerPrintMethods() {
     X(testAssignOperatorExceptionSafety)     \
     X(testOperatorChaining)                  \
     X(testCompleteTask)                      \
-    X(testTaskManagerPrintMethods)
+    X(testTaskManagerPrintMethods)           \
+    X(testComplexAssignFilterOperations)
 
 
 testFunc tests[] = {

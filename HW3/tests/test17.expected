@@ -1,0 +1,44 @@
+Running testComplexAssignFilterOperations ... 
+Part 1 - initial list:
+Task ID: 8, Priority: 40, Type: Presentation, Description: PowerPoint noob
+Task ID: 4, Priority: 20, Type: Presentation, Description: PowerPoint God
+Task ID: 6, Priority: 17, Type: Training, Description: I love being strong
+Task ID: 5, Priority: 15, Type: Testing, Description: Foo without a bar
+Task ID: 3, Priority: 10, Type: Documentation, Description: The happy task
+Task ID: 1, Priority: 3, Type: Testing, Description: Foo with a bar
+Task ID: 7, Priority: 2, Type: Documentation, Description: The sad task
+Task ID: 2, Priority: 1, Type: Training, Description: I love muscles
+
+Part 2 - change all Training to Testing:
+Task ID: 8, Priority: 40, Type: Presentation, Description: PowerPoint noob
+Task ID: 4, Priority: 20, Type: Presentation, Description: PowerPoint God
+Task ID: 6, Priority: 17, Type: Testing, Description: I love being strong
+Task ID: 5, Priority: 15, Type: Testing, Description: Foo without a bar
+Task ID: 3, Priority: 10, Type: Documentation, Description: The happy task
+Task ID: 1, Priority: 3, Type: Testing, Description: Foo with a bar
+Task ID: 7, Priority: 2, Type: Documentation, Description: The sad task
+Task ID: 2, Priority: 1, Type: Testing, Description: I love muscles
+
+Part 3 - change all Documentation to Training:
+Task ID: 8, Priority: 40, Type: Presentation, Description: PowerPoint noob
+Task ID: 4, Priority: 20, Type: Presentation, Description: PowerPoint God
+Task ID: 6, Priority: 17, Type: Testing, Description: I love being strong
+Task ID: 5, Priority: 15, Type: Testing, Description: Foo without a bar
+Task ID: 3, Priority: 10, Type: Training, Description: The happy task
+Task ID: 1, Priority: 3, Type: Testing, Description: Foo with a bar
+Task ID: 7, Priority: 2, Type: Training, Description: The sad task
+Task ID: 2, Priority: 1, Type: Testing, Description: I love muscles
+
+Part 4 - Test filter only Training and Testing:
+Task ID: 6, Priority: 17, Type: Training, Description: I love being strong
+Task ID: 5, Priority: 15, Type: Testing, Description: Foo without a bar
+Task ID: 1, Priority: 3, Type: Testing, Description: Foo with a bar
+Task ID: 2, Priority: 1, Type: Training, Description: I love muscles
+
+Part 5 - check items of final lists are the same:
+Task ID: 6, Priority: 17, Type: Testing, Description: I love being strong
+Task ID: 5, Priority: 15, Type: Testing, Description: Foo without a bar
+Task ID: 1, Priority: 3, Type: Testing, Description: Foo with a bar
+Task ID: 2, Priority: 1, Type: Testing, Description: I love muscles
+
+[OK]
