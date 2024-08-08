@@ -1,0 +1,22 @@
+{
+  "templates": {
+    "game": ":::events::: :::players::: > :::out:::",
+  },
+  "tests": [
+    {
+      "name": "Example Test ::placeholder::",
+      "template": "game",
+      "params": {
+        "events": "example::placeholder::.events",
+        "players": "example::placeholder::.players",
+        "out": "example::placeholder::.out"
+      },
+      "params_range": {
+        "first": 1,
+        "last": 3
+      },
+      "output_file": "example::placeholder::.out",
+      "expected_output_file": "example::placeholder::.expected"
+    }
+  ]
+}

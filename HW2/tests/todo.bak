@@ -1,0 +1,10 @@
+{
+    "name": "Constructor Invalid Size Test (Thanks Linoy :))",
+    "template": "hw2Error",
+    "params": {
+    "testName": "constructorErrorSize",
+    "out": "constructorErrorSize.out"
+    },
+    "output_file": "constructorErrorSize.out",
+    "expected_output_file": "errorSize.expected"
+},
