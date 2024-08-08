@@ -1,6 +1,6 @@
 {
   "templates": {
-    "game": ":::events::: :::players::: > :::out:::",
+    "game": ":::events::: :::players::: > :::out:::"
   },
   "tests": [
     {
@@ -15,6 +15,7 @@
         "first": 1,
         "last": 3
       },
+      "run_leaks": true,
       "output_file": "example::placeholder::.out",
       "expected_output_file": "example::placeholder::.expected"
     }
