@@ -14,8 +14,8 @@ if [ ! -f ./.gitignore ]; then
     echo ".gitignore missing, creating and commiting the file"
     echo "**/cmake-build-debug/" > ./.gitignore
     echo "**/.idea/" >> ./.gitignore
-    echo "**/MatamStory" >> ./.gitignore
-    echo "**/MatamStoryTest" >> ./.gitignore
+    echo "**/TaskManager" >> ./.gitignore
+    echo "**/TaskManagerTest" >> ./.gitignore
     echo "**/*.out" >> ./.gitignore
     echo "**/test_results.html" >> ./.gitignore
     git add ./.gitignore
@@ -29,8 +29,8 @@ git rm --cached **/*.out
 git commit -m "Remove tests' output from git index"
 git rm --cached **/test_results.html
 git commit -m "Remove tests' report from git index"
-git rm --cached **/MatamStory
+git rm --cached **/TaskManager
 git commit -m "Remove wet compiled executable from git index"
-git rm --cached **/MatamStoryTest
+git rm --cached **/TaskManagerTest
 git commit -m "Remove wet compiled testing executable from git index"
 git push
