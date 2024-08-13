@@ -29,7 +29,7 @@ Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
 1          Daniel          2         5     140   12
 2          Regev           2         5     100   12
-3          Baraa           1         5     105   10
+3          Baraa           1         5     115   10
 
 ----------------------------------------
 
@@ -55,7 +55,7 @@ Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
 1          Daniel          3         5     130   14
 2          Regev           3         5     100   14
-3          Baraa           1         5     60    10
+3          Baraa           1         5     80    10
 
 ----------------------------------------
 
@@ -81,7 +81,7 @@ Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
 1          Daniel          4         5     120   16
 2          Regev           4         5     100   16
-3          Baraa           1         5     15    10
+3          Baraa           1         5     45    10
 
 ----------------------------------------
 
@@ -107,7 +107,7 @@ Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
 1          Daniel          5         5     110   18
 2          Regev           5         5     100   18
-3          Baraa           1         5     0     10
+3          Baraa           1         5     10    10
 
 ----------------------------------------
 
@@ -123,6 +123,11 @@ Player: Regev, Magician with RiskTaking character (level 5, force 5)
 Event: Snail (power 5, loot 2, damage 10)
 Regev won the encounter, gained 2 coins and leveled up!
 
+Turn: 15
+Player: Baraa, Warrior with RiskTaking character (level 1, force 5)
+Event: Pack of 2 members (power 17, loot 7, damage 35)
+Baraa lost the encounter and took 35 damage!
+
 Round has ended!
 Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
@@ -134,12 +139,12 @@ Ranking    Player Name     Level     Force HP    Coins
 
 New round starts!
 
-Turn: 15
-Player: Daniel, Warrior with Responsible character (level 6, force 5)
-Event: Pack of 2 members (power 17, loot 7, damage 35)
-Daniel lost the encounter and took 35 damage!
-
 Turn: 16
+Player: Daniel, Warrior with Responsible character (level 6, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Daniel won the encounter, gained 2 coins and leveled up!
+
+Turn: 17
 Player: Regev, Magician with RiskTaking character (level 6, force 5)
 Event: Snail (power 5, loot 2, damage 10)
 Regev won the encounter, gained 2 coins and leveled up!
@@ -147,41 +152,20 @@ Regev won the encounter, gained 2 coins and leveled up!
 Round has ended!
 Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
-1          Regev           7         5     100   22
-2          Daniel          6         5     55    20
+1          Daniel          7         5     90    22
+2          Regev           7         5     100   22
 3          Baraa           1         5     0     10
 
 ----------------------------------------
 
 New round starts!
-
-Turn: 17
-Player: Daniel, Warrior with Responsible character (level 6, force 5)
-Event: Snail (power 5, loot 2, damage 10)
-Daniel won the encounter, gained 2 coins and leveled up!
 
 Turn: 18
-Player: Regev, Magician with RiskTaking character (level 7, force 5)
+Player: Daniel, Warrior with Responsible character (level 7, force 5)
 Event: Pack of 2 members (power 17, loot 7, damage 35)
-Regev lost the encounter and took 35 damage!
-
-Round has ended!
-Leader board is as follows:
-Ranking    Player Name     Level     Force HP    Coins
-1          Daniel          7         5     45    22
-2          Regev           7         5     65    22
-3          Baraa           1         5     0     10
-
-----------------------------------------
-
-New round starts!
+Daniel lost the encounter and took 35 damage!
 
 Turn: 19
-Player: Daniel, Warrior with Responsible character (level 7, force 5)
-Event: Snail (power 5, loot 2, damage 10)
-Daniel won the encounter, gained 2 coins and leveled up!
-
-Turn: 20
 Player: Regev, Magician with RiskTaking character (level 7, force 5)
 Event: Snail (power 5, loot 2, damage 10)
 Regev won the encounter, gained 2 coins and leveled up!
@@ -189,7 +173,28 @@ Regev won the encounter, gained 2 coins and leveled up!
 Round has ended!
 Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
-1          Daniel          8         5     35    24
+1          Regev           8         5     100   24
+2          Daniel          7         5     55    22
+3          Baraa           1         5     0     10
+
+----------------------------------------
+
+New round starts!
+
+Turn: 20
+Player: Daniel, Warrior with Responsible character (level 7, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Daniel won the encounter, gained 2 coins and leveled up!
+
+Turn: 21
+Player: Regev, Magician with RiskTaking character (level 8, force 5)
+Event: Pack of 2 members (power 17, loot 7, damage 35)
+Regev lost the encounter and took 35 damage!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Daniel          8         5     45    24
 2          Regev           8         5     65    24
 3          Baraa           1         5     0     10
 
@@ -197,12 +202,12 @@ Ranking    Player Name     Level     Force HP    Coins
 
 New round starts!
 
-Turn: 21
-Player: Daniel, Warrior with Responsible character (level 8, force 5)
-Event: Pack of 2 members (power 17, loot 7, damage 35)
-Daniel won the encounter, gained 7 coins and leveled up!
-
 Turn: 22
+Player: Daniel, Warrior with Responsible character (level 8, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Daniel won the encounter, gained 2 coins and leveled up!
+
+Turn: 23
 Player: Regev, Magician with RiskTaking character (level 8, force 5)
 Event: Snail (power 5, loot 2, damage 10)
 Regev won the encounter, gained 2 coins and leveled up!
@@ -210,7 +215,7 @@ Regev won the encounter, gained 2 coins and leveled up!
 Round has ended!
 Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
-1          Daniel          9         5     25    31
+1          Daniel          9         5     35    26
 2          Regev           9         5     65    26
 3          Baraa           1         5     0     10
 
@@ -218,21 +223,21 @@ Ranking    Player Name     Level     Force HP    Coins
 
 New round starts!
 
-Turn: 23
-Player: Daniel, Warrior with Responsible character (level 9, force 5)
-Event: Snail (power 5, loot 2, damage 10)
-Daniel won the encounter, gained 2 coins and leveled up!
-
 Turn: 24
-Player: Regev, Magician with RiskTaking character (level 9, force 5)
+Player: Daniel, Warrior with Responsible character (level 9, force 5)
 Event: Pack of 2 members (power 17, loot 7, damage 35)
-Regev lost the encounter and took 35 damage!
+Daniel won the encounter, gained 7 coins and leveled up!
+
+Turn: 25
+Player: Regev, Magician with RiskTaking character (level 9, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Regev won the encounter, gained 2 coins and leveled up!
 
 Round has ended!
 Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
-1          Daniel          10        5     15    33
-2          Regev           9         5     30    26
+1          Daniel          10        5     25    33
+2          Regev           10        5     65    28
 3          Baraa           1         5     0     10
 
 ----------------------------------------
