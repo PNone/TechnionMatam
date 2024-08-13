@@ -1,0 +1,228 @@
+Game is about to start!
+These are the players:
+
+1. Alice, Archer with Responsible character (level 1, force 5)
+2. Bob, Magician with RiskTaking character (level 1, force 5)
+3. Charlie, Warrior with RiskTaking character (level 1, force 5)
+4. Dave, Archer with Responsible character (level 1, force 5)
+
+----------------------------------------
+
+New round starts!
+
+Turn: 1
+Player: Alice, Archer with Responsible character (level 1, force 5)
+Event: SolarEclipse
+Alice was affected by a solar eclipse! their force has changed by -1!
+
+Turn: 2
+Player: Bob, Magician with RiskTaking character (level 1, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Bob won the encounter, gained 2 coins and leveled up!
+
+Turn: 3
+Player: Charlie, Warrior with RiskTaking character (level 1, force 5)
+Event: PotionsMerchant
+Charlie bought 0 potions!
+
+Turn: 4
+Player: Dave, Archer with Responsible character (level 1, force 5)
+Event: Pack of 3 members (power 32, loot 107, damage 9036)
+Dave lost the encounter and took 9036 damage!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Bob             2         5     100   12
+2          Alice           1         4     100   20
+3          Dave            1         5     0     20
+4          Charlie         1         5     150   10
+
+----------------------------------------
+
+New round starts!
+
+Turn: 5
+Player: Alice, Archer with Responsible character (level 1, force 4)
+Event: SolarEclipse
+Alice was affected by a solar eclipse! their force has changed by -1!
+
+Turn: 6
+Player: Bob, Magician with RiskTaking character (level 2, force 5)
+Event: SolarEclipse
+Bob was affected by a solar eclipse! their force has changed by 1!
+
+Turn: 7
+Player: Charlie, Warrior with RiskTaking character (level 1, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Charlie won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Bob             2         6     100   12
+2          Charlie         2         5     140   12
+3          Alice           1         3     100   20
+4          Dave            1         5     0     20
+
+----------------------------------------
+
+New round starts!
+
+Turn: 8
+Player: Alice, Archer with Responsible character (level 1, force 3)
+Event: PotionsMerchant
+Alice bought 0 potions!
+
+Turn: 9
+Player: Bob, Magician with RiskTaking character (level 2, force 6)
+Event: Pack of 3 members (power 34, loot 107, damage 9036)
+Bob lost the encounter and took 9036 damage!
+
+Turn: 10
+Player: Charlie, Warrior with RiskTaking character (level 2, force 5)
+Event: SolarEclipse
+Charlie was affected by a solar eclipse! their force has changed by -1!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Bob             2         6     0     12
+2          Charlie         2         4     140   12
+3          Alice           1         3     100   20
+4          Dave            1         5     0     20
+
+----------------------------------------
+
+New round starts!
+
+Turn: 11
+Player: Alice, Archer with Responsible character (level 1, force 3)
+Event: SolarEclipse
+Alice was affected by a solar eclipse! their force has changed by -1!
+
+Turn: 12
+Player: Charlie, Warrior with RiskTaking character (level 2, force 4)
+Event: Snail (power 5, loot 2, damage 10)
+Charlie won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Charlie         3         4     130   14
+2          Bob             2         6     0     12
+3          Alice           1         2     100   20
+4          Dave            1         5     0     20
+
+----------------------------------------
+
+New round starts!
+
+Turn: 13
+Player: Alice, Archer with Responsible character (level 1, force 2)
+Event: PotionsMerchant
+Alice bought 0 potions!
+
+Turn: 14
+Player: Charlie, Warrior with RiskTaking character (level 3, force 4)
+Event: Pack of 3 members (power 36, loot 107, damage 9036)
+Charlie lost the encounter and took 9036 damage!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Charlie         3         4     0     14
+2          Bob             2         6     0     12
+3          Alice           1         2     100   20
+4          Dave            1         5     0     20
+
+----------------------------------------
+
+New round starts!
+
+Turn: 15
+Player: Alice, Archer with Responsible character (level 1, force 2)
+Event: SolarEclipse
+Alice was affected by a solar eclipse! their force has changed by -1!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Charlie         3         4     0     14
+2          Bob             2         6     0     12
+3          Alice           1         1     100   20
+4          Dave            1         5     0     20
+
+----------------------------------------
+
+New round starts!
+
+Turn: 16
+Player: Alice, Archer with Responsible character (level 1, force 1)
+Event: SolarEclipse
+Alice was affected by a solar eclipse! their force has changed by -1!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Charlie         3         4     0     14
+2          Bob             2         6     0     12
+3          Alice           1         0     100   20
+4          Dave            1         5     0     20
+
+----------------------------------------
+
+New round starts!
+
+Turn: 17
+Player: Alice, Archer with Responsible character (level 1, force 0)
+Event: Snail (power 5, loot 2, damage 10)
+Alice lost the encounter and took 10 damage!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Charlie         3         4     0     14
+2          Bob             2         6     0     12
+3          Alice           1         0     90    20
+4          Dave            1         5     0     20
+
+----------------------------------------
+
+New round starts!
+
+Turn: 18
+Player: Alice, Archer with Responsible character (level 1, force 0)
+Event: PotionsMerchant
+Alice bought 1 potions!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Charlie         3         4     0     14
+2          Bob             2         6     0     12
+3          Dave            1         5     0     20
+4          Alice           1         0     100   15
+
+----------------------------------------
+
+New round starts!
+
+Turn: 19
+Player: Alice, Archer with Responsible character (level 1, force 0)
+Event: Pack of 3 members (power 38, loot 107, damage 9036)
+Alice lost the encounter and took 9036 damage!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Charlie         3         4     0     14
+2          Bob             2         6     0     12
+3          Dave            1         5     0     20
+4          Alice           1         0     0     15
+
+----------------------------------------
+
+Game is over!
+There are no winners in this game.
+Better luck next time!
