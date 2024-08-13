@@ -18,6 +18,34 @@
       "run_leaks": true,
       "output_file": "example:::placeholder:::.out",
       "expected_output_file": "example:::placeholder:::.expected"
+    },
+    {
+      "name": ":::placeholder:::",
+      "template": "game",
+      "params": {
+        "events": ":::placeholder:::.events",
+        "players": ":::placeholder:::.players",
+        "out": ":::placeholder:::.out"
+      },
+      "params_range": [
+        "test4-event-error-first",
+        "test5-generic-game",
+        "test6-two-winners",
+        "test7-empty-events",
+        "test8-insufficient-events",
+        "test9-knocked-out-winner",
+        "test10-one-line-input",
+        "test11-insufficient-monsters",
+        "test12-deep-recursive-pack",
+        "test13-special-event-in-pack",
+        "test14-player-named-balrog",
+        "test15-case-sensitive-balrog",
+        "test16-too-many-players",
+        "test17-responsible-named-player"
+      ],
+      "run_leaks": true,
+      "output_file": ":::placeholder:::.out",
+      "expected_output_file": ":::placeholder:::.expected"
     }
   ]
 }
