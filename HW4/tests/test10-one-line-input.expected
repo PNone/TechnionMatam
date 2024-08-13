@@ -1,7 +1,7 @@
 Game is about to start!
 These are the players:
 
-1. DanielbfaoFOlong, Warrior with Responsible character (level 1, force 5)
+1. Daniel, Warrior with Responsible character (level 1, force 5)
 2. Regev, Magician with Responsible character (level 1, force 5)
 3. Braa, Magician with RiskTaking character (level 1, force 5)
 
@@ -10,9 +10,9 @@ These are the players:
 New round starts!
 
 Turn: 1
-Player: DanielbfaoFOlong, Warrior with Responsible character (level 1, force 5)
+Player: Daniel, Warrior with Responsible character (level 1, force 5)
 Event: PotionsMerchant
-DanielbfaoFOlong bought 0 potions!
+Daniel bought 0 potions!
 
 Turn: 2
 Player: Regev, Magician with Responsible character (level 1, force 5)
@@ -28,7 +28,7 @@ Round has ended!
 Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
 1          Braa            1         6     100   10
-2          DanielbfaoFOlong1         5     150   10
+2          Daniel          1         5     150   10
 3          Regev           1         5     100   10
 
 ----------------------------------------
@@ -36,9 +36,9 @@ Ranking    Player Name     Level     Force HP    Coins
 New round starts!
 
 Turn: 4
-Player: DanielbfaoFOlong, Warrior with Responsible character (level 1, force 5)
+Player: Daniel, Warrior with Responsible character (level 1, force 5)
 Event: Pack of 3 members (power 29, loot 12, damage 60)
-DanielbfaoFOlong lost the encounter and took 60 damage!
+Daniel lost the encounter and took 60 damage!
 
 Turn: 5
 Player: Regev, Magician with Responsible character (level 1, force 5)
@@ -54,7 +54,7 @@ Round has ended!
 Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
 1          Braa            1         6     75    10
-2          DanielbfaoFOlong1         5     80    10
+2          Daniel          1         5     80    10
 3          Regev           1         5     75    10
 
 ----------------------------------------
@@ -62,9 +62,9 @@ Ranking    Player Name     Level     Force HP    Coins
 New round starts!
 
 Turn: 7
-Player: DanielbfaoFOlong, Warrior with Responsible character (level 1, force 5)
+Player: Daniel, Warrior with Responsible character (level 1, force 5)
 Event: Balrog (power 15, loot 100, damage 9001)
-DanielbfaoFOlong lost the encounter and took 9001 damage!
+Daniel lost the encounter and took 9001 damage!
 
 Turn: 8
 Player: Regev, Magician with Responsible character (level 1, force 5)
@@ -80,7 +80,7 @@ Round has ended!
 Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
 1          Braa            1         7     75    10
-2          DanielbfaoFOlong1         5     0     10
+2          Daniel          1         5     0     10
 3          Regev           1         5     40    10
 
 ----------------------------------------
@@ -101,7 +101,7 @@ Round has ended!
 Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
 1          Braa            1         7     75    10
-2          DanielbfaoFOlong1         5     0     10
+2          Daniel          1         5     0     10
 3          Regev           1         5     60    0
 
 ----------------------------------------
@@ -122,7 +122,7 @@ Round has ended!
 Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
 1          Braa            1         7     15    10
-2          DanielbfaoFOlong1         5     0     10
+2          Daniel          1         5     0     10
 3          Regev           1         6     60    0
 
 ----------------------------------------
@@ -143,7 +143,7 @@ Round has ended!
 Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
 1          Braa            1         7     0     10
-2          DanielbfaoFOlong1         5     0     10
+2          Daniel          1         5     0     10
 3          Regev           1         6     35    0
 
 ----------------------------------------
@@ -159,7 +159,7 @@ Round has ended!
 Leader board is as follows:
 Ranking    Player Name     Level     Force HP    Coins
 1          Braa            1         7     0     10
-2          DanielbfaoFOlong1         5     0     10
+2          Daniel          1         5     0     10
 3          Regev           1         6     0     0
 
 ----------------------------------------
