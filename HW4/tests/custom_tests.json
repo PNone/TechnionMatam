@@ -41,7 +41,17 @@
         "test14-player-named-balrog",
         "test15-case-sensitive-balrog",
         "test16-too-many-players",
-        "test17-responsible-named-player"
+        "test17-responsible-named-player",
+        "test18-too-long-player-name",
+        "test19-player-name-invalid-characters",
+        "test20-complex-pack",
+        "test21-large-balrog-pack",
+        "test22-negative-pack-size",
+        "test23-double-pack-size",
+        "test24-decimal-pack-size",
+        "test25-leading-zero-pack-size",
+        "test26-many-events",
+        "test27-two-winners-by-coins"
       ],
       "run_leaks": true,
       "output_file": ":::placeholder:::.out",
