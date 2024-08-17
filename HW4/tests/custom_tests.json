@@ -52,7 +52,9 @@
         "test25-leading-zero-pack-size",
         "test26-many-events",
         "test27-two-winners-by-coins",
-        "test28-too-short-player-name"
+        "test28-too-short-player-name",
+        "test29-various-checks",
+        "test30-no-negative-force"
       ],
       "run_leaks": true,
       "output_file": ":::placeholder:::.out",

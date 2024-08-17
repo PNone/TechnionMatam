@@ -1,0 +1,192 @@
+Game is about to start!
+These are the players:
+
+1. Foo, Warrior with Responsible character (level 1, force 5)
+2. Bar, Magician with RiskTaking character (level 1, force 5)
+
+----------------------------------------
+
+New round starts!
+
+Turn: 1
+Player: Foo, Warrior with Responsible character (level 1, force 5)
+Event: SolarEclipse
+Foo was affected by a solar eclipse! their force has changed by -1!
+
+Turn: 2
+Player: Bar, Magician with RiskTaking character (level 1, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Bar won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Bar             2         5     100   12
+2          Foo             1         4     150   10
+
+----------------------------------------
+
+New round starts!
+
+Turn: 3
+Player: Foo, Warrior with Responsible character (level 1, force 4)
+Event: SolarEclipse
+Foo was affected by a solar eclipse! their force has changed by -1!
+
+Turn: 4
+Player: Bar, Magician with RiskTaking character (level 2, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Bar won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Bar             3         5     100   14
+2          Foo             1         3     150   10
+
+----------------------------------------
+
+New round starts!
+
+Turn: 5
+Player: Foo, Warrior with Responsible character (level 1, force 3)
+Event: SolarEclipse
+Foo was affected by a solar eclipse! their force has changed by -1!
+
+Turn: 6
+Player: Bar, Magician with RiskTaking character (level 3, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Bar won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Bar             4         5     100   16
+2          Foo             1         2     150   10
+
+----------------------------------------
+
+New round starts!
+
+Turn: 7
+Player: Foo, Warrior with Responsible character (level 1, force 2)
+Event: SolarEclipse
+Foo was affected by a solar eclipse! their force has changed by -1!
+
+Turn: 8
+Player: Bar, Magician with RiskTaking character (level 4, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Bar won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Bar             5         5     100   18
+2          Foo             1         1     150   10
+
+----------------------------------------
+
+New round starts!
+
+Turn: 9
+Player: Foo, Warrior with Responsible character (level 1, force 1)
+Event: SolarEclipse
+Foo was affected by a solar eclipse! their force has changed by -1!
+
+Turn: 10
+Player: Bar, Magician with RiskTaking character (level 5, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Bar won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Bar             6         5     100   20
+2          Foo             1         0     150   10
+
+----------------------------------------
+
+New round starts!
+
+Turn: 11
+Player: Foo, Warrior with Responsible character (level 1, force 0)
+Event: SolarEclipse
+Foo was affected by a solar eclipse! their force was not changed!
+
+Turn: 12
+Player: Bar, Magician with RiskTaking character (level 6, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Bar won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Bar             7         5     100   22
+2          Foo             1         0     150   10
+
+----------------------------------------
+
+New round starts!
+
+Turn: 13
+Player: Foo, Warrior with Responsible character (level 1, force 0)
+Event: SolarEclipse
+Foo was affected by a solar eclipse! their force was not changed!
+
+Turn: 14
+Player: Bar, Magician with RiskTaking character (level 7, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Bar won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Bar             8         5     100   24
+2          Foo             1         0     150   10
+
+----------------------------------------
+
+New round starts!
+
+Turn: 15
+Player: Foo, Warrior with Responsible character (level 1, force 0)
+Event: SolarEclipse
+Foo was affected by a solar eclipse! their force was not changed!
+
+Turn: 16
+Player: Bar, Magician with RiskTaking character (level 8, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Bar won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Bar             9         5     100   26
+2          Foo             1         0     150   10
+
+----------------------------------------
+
+New round starts!
+
+Turn: 17
+Player: Foo, Warrior with Responsible character (level 1, force 0)
+Event: SolarEclipse
+Foo was affected by a solar eclipse! their force was not changed!
+
+Turn: 18
+Player: Bar, Magician with RiskTaking character (level 9, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Bar won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Bar             10        5     100   28
+2          Foo             1         0     150   10
+
+----------------------------------------
+
+Game is over!
+The winner is: Bar
+Congratulations!
+
