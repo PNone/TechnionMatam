@@ -1,0 +1,23 @@
+{
+  "templates": {
+    "enigma": "./enigma.py -c :::config_file::: -i :::input::: -o :::out:::"
+  },
+  "tests": [
+    {
+      "name": "Example Test :::placeholder:::",
+      "template": "enigma",
+      "params": {
+        "config_file": "example_config_file.json",
+        "input": "example:::placeholder:::.in",
+        "out": "example:::placeholder:::.out"
+      },
+      "params_range": {
+        "first": 1,
+        "last": 4
+      },
+      "run_leaks": false,
+      "output_file": "example:::placeholder:::.out",
+      "expected_output_file": "example:::placeholder:::.expected"
+    }
+  ]
+}
