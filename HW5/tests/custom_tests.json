@@ -1,6 +1,6 @@
 {
   "templates": {
-    "enigma": "./enigma.py -c :::config_file::: -i :::input::: -o :::out:::"
+    "enigma": "-c :::config_file::: -i :::input::: -o :::out:::"
   },
   "tests": [
     {
