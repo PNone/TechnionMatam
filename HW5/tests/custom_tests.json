@@ -75,8 +75,7 @@
       },
       "run_leaks": false,
       "output_file": "invalidConfig.out",
-      "expected_output_file": "nonJsonConfig.expected",
-      "expected_output_is_substring": true
+      "expected_output_file": "enigmaError.expected"
     },
     {
       "name": "Test Flags in Different Order",
