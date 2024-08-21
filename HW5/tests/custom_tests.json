@@ -1,6 +1,9 @@
 {
   "templates": {
-    "enigma": "-c :::config_file::: -i :::input::: -o :::out:::"
+    "enigma": "-c :::config_file::: -i :::input::: -o :::out:::",
+    "enigmaNoInput": "-c :::config_file::: -o :::outDummy::: 2> :::out:::",
+    "enigmaNoConfig": "-i :::input::: 2> :::out:::",
+    "enigmaStdOut": "-c :::config_file::: -i :::input::: > :::out:::"
   },
   "tests": [
     {
@@ -18,6 +21,46 @@
       "run_leaks": false,
       "output_file": "example:::placeholder:::.out",
       "expected_output_file": "example:::placeholder:::.expected"
+    },
+    {
+      "name": "Example Test Using stdout :::placeholder:::",
+      "template": "enigmaStdOut",
+      "params": {
+        "config_file": "example_config_file.json",
+        "input": "example:::placeholder:::.in",
+        "out": "exampleStdOut:::placeholder:::.out"
+      },
+      "params_range": {
+        "first": 1,
+        "last": 4
+      },
+      "run_leaks": false,
+      "output_file": "exampleStdOut:::placeholder:::.out",
+      "expected_output_file": "example:::placeholder:::.expected"
+    },
+    {
+      "name": "No Input Flag Test",
+      "template": "enigmaNoInput",
+      "params": {
+        "config_file": "example_config_file.json",
+        "outDummy": "noInputFlagDummy.out",
+        "out": "noInputFlag.out"
+      },
+      "run_leaks": false,
+      "output_file": "noInputFlag.out",
+      "expected_output_file": "invalidUsage.expected"
+    },
+    {
+      "name": "No Config Flag Test",
+      "template": "enigmaNoConfig",
+      "params": {
+        "config_file": "example_config_file.json",
+        "input": "example1.in",
+        "out": "noConfigFlag.out"
+      },
+      "run_leaks": false,
+      "output_file": "noConfigFlag.out",
+      "expected_output_file": "invalidUsage.expected"
     }
   ]
 }

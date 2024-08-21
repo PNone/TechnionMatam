@@ -1,0 +1,1 @@
+Usage: python3 enigma.py -c <config_file> -i <input_file> -o <output_file>
