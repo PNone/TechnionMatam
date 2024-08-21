@@ -76,6 +76,18 @@
       "expected_output_file": "nonJsonConfig.expected"
     },
     {
+      "name": "Test invalid config file",
+      "template": "enigmaStdOut",
+      "params": {
+        "config_file": "invalid_config_file.json",
+        "input": "example2.in",
+        "out": "invalidConfig.out"
+      },
+      "run_leaks": false,
+      "output_file": "invalidConfig.out",
+      "expected_output_file": "nonJsonConfig.expected"
+    },
+    {
       "name": "Test Flags in Different Order",
       "template": "enigmaReordered",
       "params": {
