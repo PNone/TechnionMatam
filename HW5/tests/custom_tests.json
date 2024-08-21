@@ -1,10 +1,10 @@
 {
   "templates": {
     "enigma": "-c :::config_file::: -i :::input::: -o :::out:::",
-    "enigmaNoInput": "-c :::config_file::: -o :::outDummy::: 2>&1 > :::out:::",
-    "enigmaNoConfig": "-i :::input::: 2>&1 > :::out:::",
+    "enigmaNoInput": "-c :::config_file::: -o :::outDummy::: > :::out::: 2>&1",
+    "enigmaNoConfig": "-i :::input::: > :::out::: 2>&1",
     "enigmaStdOut": "-c :::config_file::: -i :::input::: > :::out:::",
-    "enigmaWithError": "-c :::config_file::: -i :::input::: 2>&1 > :::out:::",
+    "enigmaWithError": "-c :::config_file::: -i :::input::: > :::out::: 2>&1",
     "enigmaReordered": " -o :::out::: -c :::config_file::: -i :::input:::"
   },
   "tests": [
