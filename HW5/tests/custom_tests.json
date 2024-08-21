@@ -4,6 +4,7 @@
     "enigmaNoInput": "-c :::config_file::: -o :::outDummy::: 2> :::out:::",
     "enigmaNoConfig": "-i :::input::: 2> :::out:::",
     "enigmaStdOut": "-c :::config_file::: -i :::input::: > :::out:::",
+    "enigmaWithError": "-c :::config_file::: -i :::input::: 2>&1 > :::out:::",
     "enigmaReordered": " -o :::out::: -c :::config_file::: -i :::input:::"
   },
   "tests": [
@@ -65,7 +66,7 @@
     },
     {
       "name": "Test config non json extension",
-      "template": "enigmaStdOut",
+      "template": "enigmaWithError",
       "params": {
         "config_file": "example_config_file.txt",
         "input": "example1.in",
@@ -77,7 +78,7 @@
     },
     {
       "name": "Test invalid config file",
-      "template": "enigmaStdOut",
+      "template": "enigmaWithError",
       "params": {
         "config_file": "invalid_config_file.json",
         "input": "example2.in",
