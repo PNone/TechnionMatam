@@ -88,6 +88,18 @@
       "run_leaks": false,
       "output_file": "reorderedFlags.out",
       "expected_output_file": "example4.expected"
+    },
+    {
+      "name": "Different Config Test",
+      "template": "enigma",
+      "params": {
+        "config_file": "config_file2.json",
+        "input": "differentConfig.in",
+        "out": "differentConfig.out"
+      },
+      "run_leaks": false,
+      "output_file": "differentConfig.out",
+      "expected_output_file": "differentConfig.expected"
     }
   ]
 }
