@@ -3,7 +3,8 @@
     "enigma": "-c :::config_file::: -i :::input::: -o :::out:::",
     "enigmaNoInput": "-c :::config_file::: -o :::outDummy::: 2> :::out:::",
     "enigmaNoConfig": "-i :::input::: 2> :::out:::",
-    "enigmaStdOut": "-c :::config_file::: -i :::input::: > :::out:::"
+    "enigmaStdOut": "-c :::config_file::: -i :::input::: > :::out:::",
+    "enigmaReordered": " -o :::out::: -c :::config_file::: -i :::input:::"
   },
   "tests": [
     {
@@ -61,6 +62,30 @@
       "run_leaks": false,
       "output_file": "noConfigFlag.out",
       "expected_output_file": "invalidUsage.expected"
+    },
+    {
+      "name": "Test config non json extension",
+      "template": "enigmaStdOut",
+      "params": {
+        "config_file": "example_config_file.txt",
+        "input": "example1.in",
+        "out": "nonJsonConfig.out"
+      },
+      "run_leaks": false,
+      "output_file": "nonJsonConfig.out",
+      "expected_output_file": "nonJsonConfig.expected"
+    },
+    {
+      "name": "Test Flags in Different Order",
+      "template": "enigmaReordered",
+      "params": {
+        "config_file": "example_config_file.json",
+        "input": "example4.in",
+        "out": "reorderedFlags.out"
+      },
+      "run_leaks": false,
+      "output_file": "reorderedFlags.out",
+      "expected_output_file": "example4.expected"
     }
   ]
 }
