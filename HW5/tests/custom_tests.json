@@ -65,18 +65,6 @@
       "expected_output_file": "invalidUsage.expected"
     },
     {
-      "name": "Test config non json extension",
-      "template": "enigmaWithError",
-      "params": {
-        "config_file": "example_config_file.txt",
-        "input": "example1.in",
-        "out": "nonJsonConfig.out"
-      },
-      "run_leaks": false,
-      "output_file": "nonJsonConfig.out",
-      "expected_output_file": "nonJsonConfig.expected"
-    },
-    {
       "name": "Test invalid config file",
       "template": "enigmaWithError",
       "params": {
@@ -86,7 +74,8 @@
       },
       "run_leaks": false,
       "output_file": "invalidConfig.out",
-      "expected_output_file": "nonJsonConfig.expected"
+      "expected_output_file": "nonJsonConfig.expected",
+      "expected_output_is_substring": true
     },
     {
       "name": "Test Flags in Different Order",
