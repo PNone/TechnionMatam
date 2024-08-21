@@ -117,11 +117,10 @@
     },
     {
       "name": "Missimg Input File Test",
-      "template": "enigma",
+      "template": "enigmaWithError",
       "params": {
         "input": "InvalidFilePath.in",
         "config_file": "example_config_file.json",
-        "outDummy": "invalidArgDummy.out",
         "out": "missingInputFile.out"
       },
       "run_leaks": false,
@@ -130,11 +129,10 @@
     },
     {
       "name": "Missimg Config File Test",
-      "template": "enigma",
+      "template": "enigmaWithError",
       "params": {
         "input": "example4.in",
         "config_file": "InvalidFilePath.json",
-        "outDummy": "invalidArgDummy.out",
         "out": "missingConfigFile.out"
       },
       "run_leaks": false,
