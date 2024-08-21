@@ -5,7 +5,8 @@
     "enigmaNoConfig": "-i :::input::: > :::out::: 2>&1",
     "enigmaStdOut": "-c :::config_file::: -i :::input::: > :::out:::",
     "enigmaWithError": "-c :::config_file::: -i :::input::: > :::out::: 2>&1",
-    "enigmaReordered": " -o :::out::: -c :::config_file::: -i :::input:::"
+    "enigmaReordered": " -o :::out::: -c :::config_file::: -i :::input:::",
+    "invalidArg": "-c :::config_file::: -l invalidFlagL -i :::input::: -o :::outDummy:::  > :::out::: 2>&1"
   },
   "tests": [
     {
@@ -100,6 +101,45 @@
       "run_leaks": false,
       "output_file": "differentConfig.out",
       "expected_output_file": "differentConfig.expected"
+    },
+    {
+      "name": "Invalid Enigma Arg",
+      "template": "invalidArg",
+      "params": {
+        "input": "example4.in",
+        "config_file": "example_config_file.json",
+        "outDummy": "invalidArgDummy.out",
+        "out": "invalidArg.out"
+      },
+      "run_leaks": false,
+      "output_file": "invalidArg.out",
+      "expected_output_file": "invalidUsage.expected"
+    },
+    {
+      "name": "Missimg Input File Test",
+      "template": "enigma",
+      "params": {
+        "input": "InvalidFilePath.in",
+        "config_file": "example_config_file.json",
+        "outDummy": "invalidArgDummy.out",
+        "out": "missingInputFile.out"
+      },
+      "run_leaks": false,
+      "output_file": "missingInputFile.out",
+      "expected_output_file": "enigmaError.expected"
+    },
+    {
+      "name": "Missimg Config File Test",
+      "template": "enigma",
+      "params": {
+        "input": "example4.in",
+        "config_file": "InvalidFilePath.json",
+        "outDummy": "invalidArgDummy.out",
+        "out": "missingConfigFile.out"
+      },
+      "run_leaks": false,
+      "output_file": "missingConfigFile.out",
+      "expected_output_file": "enigmaError.expected"
     }
   ]
 }
