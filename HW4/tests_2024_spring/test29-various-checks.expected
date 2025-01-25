@@ -1,0 +1,306 @@
+Game is about to start!
+These are the players:
+
+1. Daniel, Warrior with Responsible character (level 1, force 5)
+2. Regev, Magician with RiskTaking character (level 1, force 5)
+3. Baraa, Archer with RiskTaking character (level 1, force 5)
+
+----------------------------------------
+
+New round starts!
+
+Turn: 1
+Player: Daniel, Warrior with Responsible character (level 1, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Daniel won the encounter, gained 2 coins and leveled up!
+
+Turn: 2
+Player: Regev, Magician with RiskTaking character (level 1, force 5)
+Event: Pack of 2 members (power 29, loot 12, damage 60)
+Regev lost the encounter and took 60 damage!
+
+Turn: 3
+Player: Baraa, Archer with RiskTaking character (level 1, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Baraa won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Baraa           2         5     100   22
+2          Daniel          2         5     140   12
+3          Regev           1         5     40    10
+
+----------------------------------------
+
+New round starts!
+
+Turn: 4
+Player: Daniel, Warrior with Responsible character (level 2, force 5)
+Event: SolarEclipse
+Daniel was affected by a solar eclipse! their force has changed by -1!
+
+Turn: 5
+Player: Regev, Magician with RiskTaking character (level 1, force 5)
+Event: PotionsMerchant
+Regev bought 1 potions!
+
+Turn: 6
+Player: Baraa, Archer with RiskTaking character (level 2, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Baraa won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Baraa           3         5     100   24
+2          Daniel          2         4     140   12
+3          Regev           1         5     50    5
+
+----------------------------------------
+
+New round starts!
+
+Turn: 7
+Player: Daniel, Warrior with Responsible character (level 2, force 4)
+Event: Pack of 2 members (power 29, loot 12, damage 60)
+Daniel lost the encounter and took 60 damage!
+
+Turn: 8
+Player: Regev, Magician with RiskTaking character (level 1, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Regev won the encounter, gained 2 coins and leveled up!
+
+Turn: 9
+Player: Baraa, Archer with RiskTaking character (level 3, force 5)
+Event: SolarEclipse
+Baraa was affected by a solar eclipse! their force has changed by -1!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Baraa           3         4     100   24
+2          Daniel          2         4     80    12
+3          Regev           2         5     50    7
+
+----------------------------------------
+
+New round starts!
+
+Turn: 10
+Player: Daniel, Warrior with Responsible character (level 2, force 4)
+Event: PotionsMerchant
+Daniel bought 2 potions!
+
+Turn: 11
+Player: Regev, Magician with RiskTaking character (level 2, force 5)
+Event: Snail (power 5, loot 2, damage 10)
+Regev won the encounter, gained 2 coins and leveled up!
+
+Turn: 12
+Player: Baraa, Archer with RiskTaking character (level 3, force 4)
+Event: Pack of 2 members (power 29, loot 12, damage 60)
+Baraa lost the encounter and took 60 damage!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Baraa           3         4     40    24
+2          Regev           3         5     50    9
+3          Daniel          2         4     100   2
+
+----------------------------------------
+
+New round starts!
+
+Turn: 13
+Player: Daniel, Warrior with Responsible character (level 2, force 4)
+Event: Snail (power 5, loot 2, damage 10)
+Daniel won the encounter, gained 2 coins and leveled up!
+
+Turn: 14
+Player: Regev, Magician with RiskTaking character (level 3, force 5)
+Event: SolarEclipse
+Regev was affected by a solar eclipse! their force has changed by 1!
+
+Turn: 15
+Player: Baraa, Archer with RiskTaking character (level 3, force 4)
+Event: PotionsMerchant
+Baraa bought 1 potions!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Baraa           3         4     50    19
+2          Regev           3         6     50    9
+3          Daniel          3         4     90    4
+
+----------------------------------------
+
+New round starts!
+
+Turn: 16
+Player: Daniel, Warrior with Responsible character (level 3, force 4)
+Event: Snail (power 5, loot 2, damage 10)
+Daniel won the encounter, gained 2 coins and leveled up!
+
+Turn: 17
+Player: Regev, Magician with RiskTaking character (level 3, force 6)
+Event: Pack of 2 members (power 29, loot 12, damage 60)
+Regev lost the encounter and took 60 damage!
+
+Turn: 18
+Player: Baraa, Archer with RiskTaking character (level 3, force 4)
+Event: Snail (power 5, loot 2, damage 10)
+Baraa won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Baraa           4         4     50    21
+2          Daniel          4         4     80    6
+3          Regev           3         6     0     9
+
+----------------------------------------
+
+New round starts!
+
+Turn: 19
+Player: Daniel, Warrior with Responsible character (level 4, force 4)
+Event: SolarEclipse
+Daniel was affected by a solar eclipse! their force has changed by -1!
+
+Turn: 20
+Player: Baraa, Archer with RiskTaking character (level 4, force 4)
+Event: PotionsMerchant
+Baraa bought 0 potions!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Baraa           4         4     50    21
+2          Daniel          4         3     80    6
+3          Regev           3         6     0     9
+
+----------------------------------------
+
+New round starts!
+
+Turn: 21
+Player: Daniel, Warrior with Responsible character (level 4, force 3)
+Event: Snail (power 5, loot 2, damage 10)
+Daniel won the encounter, gained 2 coins and leveled up!
+
+Turn: 22
+Player: Baraa, Archer with RiskTaking character (level 4, force 4)
+Event: Pack of 2 members (power 29, loot 12, damage 60)
+Baraa lost the encounter and took 60 damage!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Daniel          5         3     70    8
+2          Baraa           4         4     0     21
+3          Regev           3         6     0     9
+
+----------------------------------------
+
+New round starts!
+
+Turn: 23
+Player: Daniel, Warrior with Responsible character (level 5, force 3)
+Event: Snail (power 5, loot 2, damage 10)
+Daniel won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Daniel          6         3     60    10
+2          Baraa           4         4     0     21
+3          Regev           3         6     0     9
+
+----------------------------------------
+
+New round starts!
+
+Turn: 24
+Player: Daniel, Warrior with Responsible character (level 6, force 3)
+Event: SolarEclipse
+Daniel was affected by a solar eclipse! their force has changed by -1!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Daniel          6         2     60    10
+2          Baraa           4         4     0     21
+3          Regev           3         6     0     9
+
+----------------------------------------
+
+New round starts!
+
+Turn: 25
+Player: Daniel, Warrior with Responsible character (level 6, force 2)
+Event: PotionsMerchant
+Daniel bought 2 potions!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Daniel          6         2     80    0
+2          Baraa           4         4     0     21
+3          Regev           3         6     0     9
+
+----------------------------------------
+
+New round starts!
+
+Turn: 26
+Player: Daniel, Warrior with Responsible character (level 6, force 2)
+Event: Snail (power 5, loot 2, damage 10)
+Daniel won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Daniel          7         2     70    2
+2          Baraa           4         4     0     21
+3          Regev           3         6     0     9
+
+----------------------------------------
+
+New round starts!
+
+Turn: 27
+Player: Daniel, Warrior with Responsible character (level 7, force 2)
+Event: Pack of 2 members (power 29, loot 12, damage 60)
+Daniel lost the encounter and took 60 damage!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Daniel          7         2     10    2
+2          Baraa           4         4     0     21
+3          Regev           3         6     0     9
+
+----------------------------------------
+
+New round starts!
+
+Turn: 28
+Player: Daniel, Warrior with Responsible character (level 7, force 2)
+Event: Snail (power 5, loot 2, damage 10)
+Daniel won the encounter, gained 2 coins and leveled up!
+
+Round has ended!
+Leader board is as follows:
+Ranking    Player Name     Level     Force HP    Coins
+1          Daniel          8         2     0     4
+2          Baraa           4         4     0     21
+3          Regev           3         6     0     9
+
+----------------------------------------
+
+Game is over!
+There are no winners in this game.
+Better luck next time!
