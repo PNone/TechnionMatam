@@ -1,0 +1,64 @@
+{
+  "templates": {
+    "game": ":::events::: :::players::: > :::out:::"
+  },
+  "tests": [
+    {
+      "name": "Example Test :::placeholder:::",
+      "template": "game",
+      "params": {
+        "events": "example:::placeholder:::.events",
+        "players": "example:::placeholder:::.players",
+        "out": "example:::placeholder:::.out"
+      },
+      "params_range": {
+        "first": 1,
+        "last": 3
+      },
+      "run_leaks": true,
+      "output_file": "example:::placeholder:::.out",
+      "expected_output_file": "example:::placeholder:::.expected"
+    },
+    {
+      "name": ":::placeholder:::",
+      "template": "game",
+      "params": {
+        "events": ":::placeholder:::.events",
+        "players": ":::placeholder:::.players",
+        "out": ":::placeholder:::.out"
+      },
+      "params_range": [
+        "test4-event-error-first",
+        "test5-generic-game",
+        "test6-two-winners",
+        "test7-empty-events",
+        "test8-insufficient-events",
+        "test9-knocked-out-winner",
+        "test10-one-line-input",
+        "test11-insufficient-monsters",
+        "test12-deep-recursive-pack",
+        "test13-special-event-in-pack",
+        "test14-player-named-balrog",
+        "test15-case-sensitive-balrog",
+        "test16-too-many-players",
+        "test17-responsible-named-player",
+        "test18-too-long-player-name",
+        "test19-player-name-invalid-characters",
+        "test20-complex-pack",
+        "test21-large-balrog-pack",
+        "test22-negative-pack-size",
+        "test23-double-pack-size",
+        "test24-decimal-pack-size",
+        "test25-leading-zero-pack-size",
+        "test26-many-events",
+        "test27-two-winners-by-coins",
+        "test28-too-short-player-name",
+        "test29-various-checks",
+        "test30-no-negative-force"
+      ],
+      "run_leaks": true,
+      "output_file": ":::placeholder:::.out",
+      "expected_output_file": ":::placeholder:::.expected"
+    }
+  ]
+}
