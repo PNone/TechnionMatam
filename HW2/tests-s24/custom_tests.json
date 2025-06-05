@@ -1,0 +1,253 @@
+{
+  "templates": {
+    "hw2": ":::testName::: > :::out:::",
+    "hw2Error": ":::testName::: 2> :::out:::",
+    "hw2OutAndError": ":::testName::: 2>&1 > :::out:::"
+  },
+  "tests": [
+    {
+      "name": "Example Test",
+      "template": "hw2",
+      "params": {
+        "testName": "example",
+        "out": "example.out"
+      },
+      "output_file": "example.out",
+      "expected_output_file": "example.expected"
+    },
+    {
+      "name": "Example Matrix Test",
+      "template": "hw2",
+      "params": {
+        "testName": "exampleMatrix",
+        "out": "exampleMatrix.out"
+      },
+      "output_file": "exampleMatrix.out",
+      "expected_output_file": "exampleMatrix.expected"
+    },
+    {
+      "name": "Example MataMvidia Test",
+      "template": "hw2",
+      "params": {
+        "testName": "exampleMataMvidia",
+        "out": "exampleMataMvidia.out"
+      },
+      "output_file": "exampleMataMvidia.out",
+      "expected_output_file": "exampleMataMvidia.expected"
+    },
+    {
+      "name": "Constructor Test (Thanks Linoy :))",
+      "template": "hw2",
+      "params": {
+        "testName": "constructorAssignment",
+        "out": "constructorAssignment.out"
+      },
+      "output_file": "constructorAssignment.out",
+      "expected_output_file": "constructorAssignment.expected"
+    },
+    {
+      "name": "Invalid Index Test 1 (Thanks Linoy :))",
+      "template": "hw2Error",
+      "params": {
+        "testName": "constructorErrorSize1",
+        "out": "constructorErrorSize1.out"
+      },
+      "output_file": "constructorErrorSize1.out",
+      "expected_output_file": "errorSize.expected",
+      "run_leaks": false
+    },
+    {
+      "name": "Invalid Index Test 2 (Thanks Linoy :))",
+      "template": "hw2Error",
+      "params": {
+        "testName": "constructorErrorSize2",
+        "out": "constructorErrorSize2.out"
+      },
+      "output_file": "constructorErrorSize2.out",
+      "expected_output_file": "errorSize.expected",
+      "run_leaks": false
+    },
+    {
+      "name": "Invalid Index Test 3 (Thanks Linoy :))",
+      "template": "hw2Error",
+      "params": {
+        "testName": "constructorErrorSize3",
+        "out": "constructorErrorSize3.out"
+      },
+      "output_file": "constructorErrorSize3.out",
+      "expected_output_file": "errorSize.expected",
+      "run_leaks": false
+    },
+    {
+      "name": "Invalid Index Test 4 (Thanks Linoy :))",
+      "template": "hw2Error",
+      "params": {
+        "testName": "constructorErrorSize4",
+        "out": "constructorErrorSize4.out"
+      },
+      "output_file": "constructorErrorSize4.out",
+      "expected_output_file": "errorSize.expected",
+      "run_leaks": false
+    },
+    {
+      "name": "Mata Mvidia End to End (Thanks Linoy :))",
+      "template": "hw2",
+      "params": {
+        "testName": "mataMvidiaE2E",
+        "out": "mataMvidiaE2E.out"
+      },
+      "output_file": "mataMvidiaE2E.out",
+      "expected_output_file": "mataMvidiaE2E.expected"
+    },
+    {
+      "name": "Matrix Initialization Test (Thanks Nir :))",
+      "template": "hw2",
+      "params": {
+        "testName": "matrixInit",
+        "out": "matrixInit.out"
+      },
+      "output_file": "matrixInit.out",
+      "expected_output_file": "matrixInit.expected"
+    },
+    {
+      "name": "Mata Mvidia Operations Test (Thanks Nir :))",
+      "template": "hw2",
+      "params": {
+        "testName": "mataMvidiaOperations",
+        "out": "mataMvidiaOperations.out"
+      },
+      "output_file": "mataMvidiaOperations.out",
+      "expected_output_file": "mataMvidiaOperations.expected"
+    },
+    {
+      "name": "Matrix Transformations Test (Thanks Nir :))",
+      "template": "hw2",
+      "params": {
+        "testName": "matrixTransformations",
+        "out": "matrixTransformations.out"
+      },
+      "output_file": "matrixTransformations.out",
+      "expected_output_file": "matrixTransformations.expected"
+    },
+    {
+      "name": "Non-Square Matrix Transformations Test (Thanks Nir :))",
+      "template": "hw2",
+      "params": {
+        "testName": "nonSquareMatrixTransformations",
+        "out": "nonSquareMatrixTransformations.out"
+      },
+      "output_file": "nonSquareMatrixTransformations.out",
+      "expected_output_file": "nonSquareMatrixTransformations.expected"
+    },
+    {
+      "name": "Matrix Sum is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "additionZeroResult",
+        "out": "additionZeroResult.out"
+      },
+      "output_file": "additionZeroResult.out",
+      "expected_output_file": "twoByTwoZeroResult.expected"
+    },
+    {
+      "name": "Matrix Subtraction is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "subZeroResult",
+        "out": "subZeroResult.out"
+      },
+      "output_file": "subZeroResult.out",
+      "expected_output_file": "twoByTwoZeroResult.expected"
+    },
+    {
+      "name": "Matrix Multiplication is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "multiplyZeroResult",
+        "out": "multiplyZeroResult.out"
+      },
+      "output_file": "multiplyZeroResult.out",
+      "expected_output_file": "multiplyZeroResult.expected"
+    },
+    {
+      "name": "Matrix Scalar Multiplication is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "scalarMultiplyZeroResult",
+        "out": "scalarMultiplyZeroResult.out"
+      },
+      "output_file": "scalarMultiplyZeroResult.out",
+      "expected_output_file": "scalarMultiplyZeroResult.expected"
+    },
+    {
+      "name": "Matrix Sum Assignment Multiplication is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "additionAssignmentZeroResult",
+        "out": "additionAssignmentZeroResult.out"
+      },
+      "output_file": "additionAssignmentZeroResult.out",
+      "expected_output_file": "twoByTwoZeroResult.expected"
+    },
+    {
+      "name": "Matrix Subtract Assignment Multiplication is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "subAssignmentZeroResult",
+        "out": "subAssignmentZeroResult.out"
+      },
+      "output_file": "subAssignmentZeroResult.out",
+      "expected_output_file": "twoByTwoZeroResult.expected"
+    },
+    {
+      "name": "Matrix Multiplication Assignment Multiplication is Zero Test",
+      "template": "hw2",
+      "params": {
+        "testName": "multiplyAssignmentZeroResult",
+        "out": "multiplyAssignmentZeroResult.out"
+      },
+      "output_file": "multiplyAssignmentZeroResult.out",
+      "expected_output_file": "multiplyAssignmentZeroResult.expected"
+    },
+    {
+      "name": "Zero Matrix Tests",
+      "template": "hw2",
+      "params": {
+        "testName": "testZeroMatrix",
+        "out": "zeroMatrix.out"
+      },
+      "output_file": "zeroMatrix.out",
+      "expected_output_file": "zeroMatrix.expected"
+    },
+    {
+      "name": "Advanced: m += m and m + m Tests",
+      "template": "hw2OutAndError",
+      "params": {
+        "testName": "matrixPlusItself",
+        "out": "matrixPlusItself.out"
+      },
+      "output_file": "matrixPlusItself.out",
+      "expected_output_file": "matrixPlusItself.expected"
+    },
+    {
+      "name": "Advanced: m *= m and m * m Tests",
+      "template": "hw2OutAndError",
+      "params": {
+        "testName": "matrixMultiplyItself",
+        "out": "matrixMultiplyItself.out"
+      },
+      "output_file": "matrixMultiplyItself.out",
+      "expected_output_file": "matrixMultiplyItself.expected"
+    },
+    {
+      "name": "Test Matamvidia constructor params copied by value",
+      "template": "hw2OutAndError",
+      "params": {
+        "testName": "matamvidiaCopiesCtorParams",
+        "out": "matamvidiaCopiesCtorParams.out"
+      },
+      "output_file": "matamvidiaCopiesCtorParams.out",
+      "expected_output_file": "matamvidiaCopiesCtorParams.expected"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+First index is first frame: 1
+Second index is second frame: 1
+Third index is third frame: 1
+
+Movie Name: Test Movie
+Author: Author
+
+Frame 0:
+|1|2|
+|3|4|
+
+Frame 1:
+|5|6|
+|7|8|
+
+Frame 2:
+|1|2|
+|3|4|
+
+-----End of Movie-----
