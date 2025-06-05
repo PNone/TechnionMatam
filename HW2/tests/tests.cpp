@@ -55,6 +55,66 @@ void testMatrixMultiplyItself(std::ostream &out);
 
 void testMatamvidiaCopiesCtorParams(std::ostream &out);
 
+void testDetFiveByFivePositive1(std::ostream &out);
+
+void testDetFiveByFivePositive2(std::ostream &out);
+
+void testDetFiveByFiveNegative1(std::ostream &out);
+
+void testDetFiveByFiveNegative2(std::ostream &out);
+
+void testDetFiveByFiveZero1(std::ostream &out);
+
+void testDetFiveByFiveZero2(std::ostream &out);
+
+void testDetFourByFourPositive1(std::ostream &out);
+
+void testDetFourByFourPositive2(std::ostream &out);
+
+void testDetFourByFourNegative1(std::ostream &out);
+
+void testDetFourByFourNegative2(std::ostream &out);
+
+void testDetFourByFourZero1(std::ostream &out);
+
+void testDetFourByFourZero2(std::ostream &out);
+
+void testDetThreeByThreePositive(std::ostream &out);
+
+void testDetThreeByThreeNegative(std::ostream &out);
+
+void testDetThreeByThreeZero(std::ostream &out);
+
+void testDetTwoByTwoPositive(std::ostream &out);
+
+void testDetTwoByTwoNegative(std::ostream &out);
+
+void testDetTwoByTwoZero(std::ostream &out);
+
+void testDetOneByOnePositive(std::ostream &out);
+
+void testDetOneByOneNegative(std::ostream &out);
+
+void testDetOneByOneZero(std::ostream &out);
+
+void testDetZero(std::ostream &out);
+
+void testDetLongRectangle(std::ostream &out);
+
+void testDetTallRectangle(std::ostream &out);
+
+void testDetPermutation1(std::ostream &out);
+
+void testDetPermutation2(std::ostream &out);
+
+void testDetIdentity(std::ostream &out);
+
+void testDetDiagonal(std::ostream &out);
+
+void testDetLinearlyDependentFiveByFive(std::ostream &out);
+
+void testDetAllZeroFiveByFive(std::ostream &out);
+
 
 #define ASSERT_TEST(expr)                                                      \
 do {                                                                           \
@@ -140,6 +200,96 @@ int main(int argc, char **argv) {
     }
     if (testName == "matamvidiaCopiesCtorParams") {
         testMatamvidiaCopiesCtorParams(std::cout);
+    }
+    if (testName == "testDetFiveByFivePositive1") {
+    testDetFiveByFivePositive1(std::cout);
+    }
+    if (testName == "testDetFiveByFivePositive2") {
+        testDetFiveByFivePositive2(std::cout);
+    }
+    if (testName == "testDetFiveByFiveNegative1") {
+        testDetFiveByFiveNegative1(std::cout);
+    }
+    if (testName == "testDetFiveByFiveNegative2") {
+        testDetFiveByFiveNegative2(std::cout);
+    }
+    if (testName == "testDetFiveByFiveZero1") {
+        testDetFiveByFiveZero1(std::cout);
+    }
+    if (testName == "testDetFiveByFiveZero2") {
+        testDetFiveByFiveZero2(std::cout);
+    }
+    if (testName == "testDetFourByFourPositive1") {
+        testDetFourByFourPositive1(std::cout);
+    }
+    if (testName == "testDetFourByFourPositive2") {
+        testDetFourByFourPositive2(std::cout);
+    }
+    if (testName == "testDetFourByFourNegative1") {
+        testDetFourByFourNegative1(std::cout);
+    }
+    if (testName == "testDetFourByFourNegative2") {
+        testDetFourByFourNegative2(std::cout);
+    }
+    if (testName == "testDetFourByFourZero1") {
+        testDetFourByFourZero1(std::cout);
+    }
+    if (testName == "testDetFourByFourZero2") {
+        testDetFourByFourZero2(std::cout);
+    }
+    if (testName == "testDetThreeByThreePositive") {
+        testDetThreeByThreePositive(std::cout);
+    }
+    if (testName == "testDetThreeByThreeNegative") {
+        testDetThreeByThreeNegative(std::cout);
+    }
+    if (testName == "testDetThreeByThreeZero") {
+        testDetThreeByThreeZero(std::cout);
+    }
+    if (testName == "testDetTwoByTwoPositive") {
+        testDetTwoByTwoPositive(std::cout);
+    }
+    if (testName == "testDetTwoByTwoNegative") {
+        testDetTwoByTwoNegative(std::cout);
+    }
+    if (testName == "testDetTwoByTwoZero") {
+        testDetTwoByTwoZero(std::cout);
+    }
+    if (testName == "testDetOneByOnePositive") {
+        testDetOneByOnePositive(std::cout);
+    }
+    if (testName == "testDetOneByOneNegative") {
+        testDetOneByOneNegative(std::cout);
+    }
+    if (testName == "testDetOneByOneZero") {
+        testDetOneByOneZero(std::cout);
+    }
+    if (testName == "testDetZero") {
+        testDetZero(std::cout);
+    }
+    if (testName == "testDetLongRectangle") {
+        testDetLongRectangle(std::cout);
+    }
+    if (testName == "testDetTallRectangle") {
+        testDetTallRectangle(std::cout);
+    }
+    if (testName == "testDetPermutation1") {
+        testDetPermutation1(std::cout);
+    }
+    if (testName == "testDetPermutation2") {
+        testDetPermutation2(std::cout);
+    }
+    if (testName == "testDetIdentity") {
+        testDetIdentity(std::cout);
+    }
+    if (testName == "testDetDiagonal") {
+        testDetDiagonal(std::cout);
+    }
+    if (testName == "testDetLinearlyDependentFiveByFive") {
+        testDetLinearlyDependentFiveByFive(std::cout);
+    }
+    if (testName == "testDetAllZeroFiveByFive") {
+        testDetAllZeroFiveByFive(std::cout);
     }
 
     return 0;
@@ -986,4 +1136,399 @@ void testMatamvidiaCopiesCtorParams(std::ostream &out) {
     delete author;
     delete m2;
     out << matam2;
+}
+
+void testDetFiveByFivePositive1(std::ostream &out){
+	Matrix m(5, 5);
+	m(0, 0) = 2;   m(0, 1) = -5;  m(0, 2) = -4;  m(0, 3) = 3;   m(0, 4) = -5;
+	m(1, 0) = 1;   m(1, 1) = 1;   m(1, 2) = -5;  m(1, 3) = 2;   m(1, 4) = 3;
+	m(2, 0) = -5;  m(2, 1) = -3;  m(2, 2) = 3;   m(2, 3) = 2;   m(2, 4) = 2;
+	m(3, 0) = 2;   m(3, 1) = -3;  m(3, 2) = 3;   m(3, 3) = -5;  m(3, 4) = 0;
+	m(4, 0) = -1;  m(4, 1) = 5;   m(4, 2) = 4;   m(4, 3) = 0;   m(4, 4) = 4;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetFiveByFivePositive2(std::ostream &out){
+	Matrix m(5, 5);
+	m(0, 0) = 0;   m(0, 1) = 3;   m(0, 2) = -2;  m(0, 3) = -5;  m(0, 4) = 5;
+	m(1, 0) = -3;  m(1, 1) = 3;   m(1, 2) = -1;  m(1, 3) = 1;   m(1, 4) = 1;
+	m(2, 0) = 1;   m(2, 1) = 5;   m(2, 2) = 2;   m(2, 3) = 3;   m(2, 4) = 2;
+	m(3, 0) = -3;  m(3, 1) = 1;   m(3, 2) = -5;  m(3, 3) = 5;   m(3, 4) = -2;
+	m(4, 0) = 0;   m(4, 1) = 5;   m(4, 2) = -4;  m(4, 3) = 4;   m(4, 4) = 2;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetFiveByFiveNegative1(std::ostream &out){
+	Matrix m(5, 5);
+	m(0, 0) = 4;   m(0, 1) = 2;   m(0, 2) = -4;  m(0, 3) = -1;  m(0, 4) = 2;
+	m(1, 0) = 2;   m(1, 1) = 2;   m(1, 2) = -4;  m(1, 3) = 5;   m(1, 4) = 0;
+	m(2, 0) = 3;   m(2, 1) = 4;   m(2, 2) = 0;   m(2, 3) = 3;   m(2, 4) = 3;
+	m(3, 0) = 2;   m(3, 1) = -4;  m(3, 2) = -3;  m(3, 3) = -4;  m(3, 4) = 5;
+	m(4, 0) = -1;  m(4, 1) = -1;  m(4, 2) = -3;  m(4, 3) = -4;  m(4, 4) = -3;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetFiveByFiveNegative2(std::ostream &out){
+	Matrix m(5, 5);
+	m(0, 0) = 2;   m(0, 1) = -1;  m(0, 2) =  1;  m(0, 3) =  2;  m(0, 4) = -1;
+	m(1, 0) = 2;   m(1, 1) =  1;  m(1, 2) =  2;  m(1, 3) =  1;  m(1, 4) = -1;
+	m(2, 0) = 1;   m(2, 1) =  2;  m(2, 2) =  1;  m(2, 3) = -1;  m(2, 4) =  2;
+	m(3, 0) = 2;   m(3, 1) =  2;  m(3, 2) =  2;  m(3, 3) =  2;  m(3, 4) = -1;
+	m(4, 0) = 0;   m(4, 1) =  0;  m(4, 2) = -1;  m(4, 3) =  2;  m(4, 4) =  1;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetFiveByFiveZero1(std::ostream &out){
+    Matrix m(5, 5);
+	m(0, 0) = 1;   m(0, 1) = -3;  m(0, 2) = 2;   m(0, 3) = 3;   m(0, 4) = 5;
+	m(1, 0) = 2;   m(1, 1) = -1;  m(1, 2) = 3;   m(1, 3) = -3;  m(1, 4) = -3;
+	m(2, 0) = 0;   m(2, 1) = 0;   m(2, 2) = 0;   m(2, 3) = 0;   m(2, 4) = 0;
+	m(3, 0) = -5;  m(3, 1) = 2;   m(3, 2) = 2;   m(3, 3) = 1;   m(3, 4) = 4;
+	m(4, 0) = -4;  m(4, 1) = 5;   m(4, 2) = -5;  m(4, 3) = 3;   m(4, 4) = 2;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetFiveByFiveZero2(std::ostream &out){
+    Matrix m(5, 5);
+	m(0, 0) = 4;   m(0, 1) = 3;   m(0, 2) = 0;   m(0, 3) = 1;   m(0, 4) = -3;
+	m(1, 0) = -5;  m(1, 1) = 2;   m(1, 2) = 0;   m(1, 3) = -1;  m(1, 4) = 1;
+	m(2, 0) = 5;   m(2, 1) = -3;  m(2, 2) = 0;   m(2, 3) = -2;  m(2, 4) = -4;
+	m(3, 0) = 2;   m(3, 1) = -2;  m(3, 2) = 0;   m(3, 3) = -1;  m(3, 4) = -5;
+	m(4, 0) = -2;  m(4, 1) = 2;   m(4, 2) = 0;   m(4, 3) = 3;   m(4, 4) = -3;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetFourByFourPositive1(std::ostream &out){
+    Matrix m(4, 4);
+	m(0, 0) = 5;   m(0, 1) = 2;   m(0, 2) = 1;   m(0, 3) = 3;
+	m(1, 0) = 0;   m(1, 1) = 7;   m(1, 2) = -1;  m(1, 3) = 2;
+	m(2, 0) = 0;   m(2, 1) = 0;   m(2, 2) = 9;   m(2, 3) = 4;
+	m(3, 0) = 0;   m(3, 1) = 0;   m(3, 2) = 0;   m(3, 3) = 7;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetFourByFourPositive2(std::ostream &out){
+    Matrix m(4, 4);
+	m(0, 0) = 1;   m(0, 1) = 2;   m(0, 2) = 1;   m(0, 3) = 0;
+	m(1, 0) = 0;   m(1, 1) = 1;   m(1, 2) = 0;   m(1, 3) = 1;
+	m(2, 0) = 0;   m(2, 1) = 0;   m(2, 2) = 3;   m(2, 3) = 0;
+	m(3, 0) = 1;   m(3, 1) = 0;   m(3, 2) = 0;   m(3, 3) = 1;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetFourByFourNegative1(std::ostream &out){
+	Matrix m(4, 4);
+	m(0, 0) = -7;  m(0, 1) = 3;   m(0, 2) = 1;   m(0, 3) = 2;
+	m(1, 0) = 0;   m(1, 1) = -8;  m(1, 2) = 2;   m(1, 3) = 1;
+	m(2, 0) = 0;   m(2, 1) = 0;   m(2, 2) = 8;   m(2, 3) = -1;
+	m(3, 0) = 0;   m(3, 1) = 0;   m(3, 2) = 0;   m(3, 3) = 7;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetFourByFourNegative2(std::ostream &out){
+	Matrix m(4, 4);
+	m(0, 0) = 1;   m(0, 1) = 2;   m(0, 2) = 3;   m(0, 3) = 4;
+	m(1, 0) = 2;   m(1, 1) = 1;   m(1, 2) = 0;   m(1, 3) = 5;
+	m(2, 0) = 3;   m(2, 1) = 4;   m(2, 2) = 1;   m(2, 3) = 2;
+	m(3, 0) = 1;   m(3, 1) = 0;   m(3, 2) = 2;   m(3, 3) = -1;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetFourByFourZero1(std::ostream &out){
+    Matrix m(4, 4);
+	m(0, 0) = 4;   m(0, 1) = -1;  m(0, 2) = 2;   m(0, 3) = 3;
+	m(1, 0) = 1;   m(1, 1) = 0;   m(1, 2) = -2;  m(1, 3) = 4;
+	m(2, 0) = 0;   m(2, 1) = 0;   m(2, 2) = 0;   m(2, 3) = 0;
+	m(3, 0) = -3;  m(3, 1) = 2;   m(3, 2) = 1;   m(3, 3) = -1;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetFourByFourZero2(std::ostream &out){
+	Matrix m(4, 4);
+	m(0, 0) = 5;   m(0, 1) = 3;   m(0, 2) = 0;   m(0, 3) = -2;
+	m(1, 0) = 2;   m(1, 1) = 1;   m(1, 2) = 0;   m(1, 3) = 4;
+	m(2, 0) = 3;   m(2, 1) = -1;  m(2, 2) = 0;   m(2, 3) = 1;
+	m(3, 0) = 1;   m(3, 1) = 2;   m(3, 2) = 0;   m(3, 3) = 0;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetThreeByThreePositive(std::ostream &out){
+    Matrix m(3, 3);
+	m(0, 0) = 2; m(0, 1) = 1; m(0, 2) = 1;
+	m(1, 0) = 1; m(1, 1) = 3; m(1, 2) = 2;
+	m(2, 0) = 1; m(2, 1) = 0; m(2, 2) = 4;
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetThreeByThreeNegative(std::ostream &out){
+	Matrix m(3, 3);
+	m(0, 0) = 2; m(0, 1) = 1; m(0, 2) = 1;
+	m(1, 0) = 1; m(1, 1) = 0; m(1, 2) = 4;
+	m(2, 0) = 1; m(2, 1) = 3; m(2, 2) = 2;
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetThreeByThreeZero(std::ostream &out){
+	Matrix m(3, 3);
+	m(0, 0) = 1; m(0, 1) = 2; m(0, 2) = 3;
+	m(1, 0) = 3; m(1, 1) = 3; m(1, 2) = 6;
+	m(2, 0) = 2; m(2, 1) = 1; m(2, 2) = 3;
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetTwoByTwoPositive(std::ostream &out){
+	Matrix m(2, 2);
+	m(0, 0) = 2;	m(0, 1) = 1;
+	m(1, 0) = 1;	m(1, 1) = 1;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetTwoByTwoNegative(std::ostream &out){
+    	Matrix m(2, 2);
+	m(0, 0) = 1;	m(0, 1) = 3;
+	m(1, 0) = 2;	m(1, 1) = 1;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetTwoByTwoZero(std::ostream &out){
+    Matrix m(2, 2);
+	m(0, 0) = -3;   m(0, 1) = -1041;
+	m(1, 0) = 5;    m(1, 1) = 1735;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetOneByOnePositive(std::ostream &out){
+    Matrix m(1, 1);
+	m(0, 0) = 4;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetOneByOneNegative(std::ostream &out){
+    Matrix m(1, 1);
+	m(0, 0) = -37;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetOneByOneZero(std::ostream &out){
+    Matrix m(1, 1);
+	m(0, 0) = 0;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetZero1(std::ostream &out){
+    Matrix m(0,0);
+	m(0, 0) = 0;
+	int det = Matrix::CalcDeterminant(m);
+}
+
+void testDetLongRectangle(std::ostream &out){
+    Matrix m(4, 7);
+	m(0, 0) =  3;	m(0, 1) = -1;	m(0, 2) =  7;	m(0, 3) =  2;	m(0, 4) = -5;	m(0, 5) =  4;	m(0, 6) =  6;
+	m(1, 0) = -2;	m(1, 1) =  9;	m(1, 2) =  1;	m(1, 3) = -3;	m(1, 4) =  8;	m(1, 5) = -7;	m(1, 6) =  5;
+	m(2, 0) =  2;	m(2, 1) = -4;	m(2, 2) =  6;	m(2, 3) = -9;	m(2, 4) =  1;	m(2, 5) =  7;	m(2, 6) = -8;
+	m(3, 0) =  5;	m(3, 1) =  3;	m(3, 2) = -2;	m(3, 3) =  4;	m(3, 4) = -6;	m(3, 5) =  9;	m(3, 6) =  1;
+    int det = Matrix::CalcDeterminant(m);
+}
+
+void testDetTallRectangle(std::ostream &out){
+	Matrix m(7, 4);
+	m(0, 0) =  2; m(0, 1) = -3; m(0, 2) =  5; m(0, 3) =  7;
+	m(1, 0) =  1; m(1, 1) = -4; m(1, 2) =  6; m(1, 3) = -2;
+	m(2, 0) = -5; m(2, 1) =  2; m(2, 2) = -7; m(2, 3) =  3;
+	m(3, 0) =  4; m(3, 1) = -6; m(3, 2) =  1; m(3, 3) = -8;
+	m(4, 0) = -2; m(4, 1) =  5; m(4, 2) =  3; m(4, 3) = -1;
+	m(5, 0) =  6; m(5, 1) = -9; m(5, 2) =  2; m(5, 3) =  4;
+	m(6, 0) = -3; m(6, 1) =  8; m(6, 2) = -4; m(6, 3) =  9;
+    int det = Matrix::CalcDeterminant(m);
+}
+
+void testDetPermutation1(std::ostream &out){
+    Matrix m(4, 4);
+	m(0, 0) = 0;	m(0, 1) = 1;	m(0, 2) = 0;	m(0, 3) = 0;
+	m(1, 0) = 1;	m(1, 1) = 0;	m(1, 2) = 0;	m(1, 3) = 0;
+	m(2, 0) = 0;	m(2, 1) = 0;	m(2, 2) = 1;	m(2, 3) = 0;
+	m(3, 0) = 0;	m(3, 1) = 0;	m(3, 2) = 0;	m(3, 3) = 1;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetPermutation2(std::ostream &out){
+    Matrix m(5, 5);
+	m(0, 0) = 0;	m(0, 1) = 0;	m(0, 2) = 1;	m(0, 3) = 0;	m(0, 4) = 0;
+	m(1, 0) = 1;	m(1, 1) = 0;	m(1, 2) = 0;	m(1, 3) = 0;	m(1, 4) = 0;
+	m(2, 0) = 0;	m(2, 1) = 0;	m(2, 2) = 0;	m(2, 3) = 0;	m(2, 4) = 1;
+	m(3, 0) = 0;	m(3, 1) = 1;	m(3, 2) = 0;	m(3, 3) = 0;	m(3, 4) = 0;
+	m(4, 0) = 0;	m(4, 1) = 0;	m(4, 2) = 0;	m(4, 3) = 1;	m(4, 4) = 0;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetIdentity(std::ostream &out){
+    Matrix m(5, 5);
+	m(0, 0) = 1;	m(0, 1) = 0;	m(0, 2) = 0;	m(0, 3) = 0;	m(0, 4) = 0;
+	m(1, 0) = 0;	m(1, 1) = 1;	m(1, 2) = 0;	m(1, 3) = 0;	m(1, 4) = 0;
+	m(2, 0) = 0;	m(2, 1) = 0;	m(2, 2) = 1;	m(2, 3) = 0;	m(2, 4) = 0;
+	m(3, 0) = 0;	m(3, 1) = 0;	m(3, 2) = 0;	m(3, 3) = 1;	m(3, 4) = 0;
+	m(4, 0) = 0;	m(4, 1) = 0;	m(4, 2) = 0;	m(4, 3) = 0;	m(4, 4) = 1;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetDiagonal(std::ostream &out){
+    Matrix m(5, 5);
+	m(0, 0) = 2;	m(0, 1) = 0;	m(0, 2) = 0;	m(0, 3) = 0;	m(0, 4) = 0;
+	m(1, 0) = 0;	m(1, 1) = 3;	m(1, 2) = 0;	m(1, 3) = 0;	m(1, 4) = 0;
+	m(2, 0) = 0;	m(2, 1) = 0;	m(2, 2) = 5;	m(2, 3) = 0;	m(2, 4) = 0;
+	m(3, 0) = 0;	m(3, 1) = 0;	m(3, 2) = 0;	m(3, 3) = 7;	m(3, 4) = 0;
+	m(4, 0) = 0;	m(4, 1) = 0;	m(4, 2) = 0;	m(4, 3) = 0;	m(4, 4) = 11;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetLinearlyDependentFiveByFive(std::ostream &out){
+    Matrix m(5, 5);
+	m(0, 0) = 1;	m(0, 1) = 2;	m(0, 2) = 3;	m(0, 3) = 4;	m(0, 4) = 5;
+	m(1, 0) = 2;	m(1, 1) = 3;	m(1, 2) = 4;	m(1, 3) = 5;	m(1, 4) = 6;
+	m(2, 0) = 3;	m(2, 1) = 4;	m(2, 2) = 5;	m(2, 3) = 6;	m(2, 4) = 7;
+	m(3, 0) = 4;	m(3, 1) = 5;	m(3, 2) = 6;	m(3, 3) = 7;	m(3, 4) = 8;
+	m(4, 0) = 5;	m(4, 1) = 6;	m(4, 2) = 7;	m(4, 3) = 8;	m(4, 4) = 9;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
+}
+
+void testDetAllZeroFiveByFive(std::ostream &out){
+    Matrix m(5, 5);
+	m(0, 0) = 0;	m(0, 1) = 0;	m(0, 2) = 0;	m(0, 3) = 0;	m(0, 4) = 0;
+	m(1, 0) = 0;	m(1, 1) = 0;	m(1, 2) = 0;	m(1, 3) = 0;	m(1, 4) = 0;
+	m(2, 0) = 0;	m(2, 1) = 0;	m(2, 2) = 0;	m(2, 3) = 0;	m(2, 4) = 0;
+	m(3, 0) = 0;	m(3, 1) = 0;	m(3, 2) = 0;	m(3, 3) = 0;	m(3, 4) = 0;
+	m(4, 0) = 0;	m(4, 1) = 0;	m(4, 2) = 0;	m(4, 3) = 0;	m(4, 4) = 0;
+
+	int det = Matrix::CalcDeterminant(m);
+	out << "m:" << endl;
+	out << m << endl;
+	out << "det:" << endl;
+	out << det << endl;
 }
