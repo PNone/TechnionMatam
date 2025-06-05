@@ -1417,7 +1417,7 @@ void testDetOneByOneZero(std::ostream &out){
 	out << det << endl;
 }
 
-void testDetZero1(std::ostream &out){
+void testDetZero(std::ostream &out){
     Matrix m(0,0);
 	m(0, 0) = 0;
 	Matrix::CalcDeterminant(m);
