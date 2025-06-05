@@ -1146,7 +1146,7 @@ void testDetFiveByFivePositive1(std::ostream &out){
 	m(3, 0) = 2;   m(3, 1) = -3;  m(3, 2) = 3;   m(3, 3) = -5;  m(3, 4) = 0;
 	m(4, 0) = -1;  m(4, 1) = 5;   m(4, 2) = 4;   m(4, 3) = 0;   m(4, 4) = 4;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1161,7 +1161,7 @@ void testDetFiveByFivePositive2(std::ostream &out){
 	m(3, 0) = -3;  m(3, 1) = 1;   m(3, 2) = -5;  m(3, 3) = 5;   m(3, 4) = -2;
 	m(4, 0) = 0;   m(4, 1) = 5;   m(4, 2) = -4;  m(4, 3) = 4;   m(4, 4) = 2;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1176,7 +1176,7 @@ void testDetFiveByFiveNegative1(std::ostream &out){
 	m(3, 0) = 2;   m(3, 1) = -4;  m(3, 2) = -3;  m(3, 3) = -4;  m(3, 4) = 5;
 	m(4, 0) = -1;  m(4, 1) = -1;  m(4, 2) = -3;  m(4, 3) = -4;  m(4, 4) = -3;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1191,7 +1191,7 @@ void testDetFiveByFiveNegative2(std::ostream &out){
 	m(3, 0) = 2;   m(3, 1) =  2;  m(3, 2) =  2;  m(3, 3) =  2;  m(3, 4) = -1;
 	m(4, 0) = 0;   m(4, 1) =  0;  m(4, 2) = -1;  m(4, 3) =  2;  m(4, 4) =  1;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1199,14 +1199,14 @@ void testDetFiveByFiveNegative2(std::ostream &out){
 }
 
 void testDetFiveByFiveZero1(std::ostream &out){
-    	Matrix m(5, 5);
+    Matrix m(5, 5);
 	m(0, 0) = 1;   m(0, 1) = -3;  m(0, 2) = 2;   m(0, 3) = 3;   m(0, 4) = 5;
 	m(1, 0) = 2;   m(1, 1) = -1;  m(1, 2) = 3;   m(1, 3) = -3;  m(1, 4) = -3;
 	m(2, 0) = 0;   m(2, 1) = 0;   m(2, 2) = 0;   m(2, 3) = 0;   m(2, 4) = 0;
 	m(3, 0) = -5;  m(3, 1) = 2;   m(3, 2) = 2;   m(3, 3) = 1;   m(3, 4) = 4;
 	m(4, 0) = -4;  m(4, 1) = 5;   m(4, 2) = -5;  m(4, 3) = 3;   m(4, 4) = 2;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1221,7 +1221,7 @@ void testDetFiveByFiveZero2(std::ostream &out){
 	m(3, 0) = 2;   m(3, 1) = -2;  m(3, 2) = 0;   m(3, 3) = -1;  m(3, 4) = -5;
 	m(4, 0) = -2;  m(4, 1) = 2;   m(4, 2) = 0;   m(4, 3) = 3;   m(4, 4) = -3;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1235,7 +1235,7 @@ void testDetFourByFourPositive1(std::ostream &out){
 	m(2, 0) = 0;   m(2, 1) = 0;   m(2, 2) = 9;   m(2, 3) = 4;
 	m(3, 0) = 0;   m(3, 1) = 0;   m(3, 2) = 0;   m(3, 3) = 7;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1249,7 +1249,7 @@ void testDetFourByFourPositive2(std::ostream &out){
 	m(2, 0) = 0;   m(2, 1) = 0;   m(2, 2) = 3;   m(2, 3) = 0;
 	m(3, 0) = 1;   m(3, 1) = 0;   m(3, 2) = 0;   m(3, 3) = 1;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1263,7 +1263,7 @@ void testDetFourByFourNegative1(std::ostream &out){
 	m(2, 0) = 0;   m(2, 1) = 0;   m(2, 2) = 8;   m(2, 3) = -1;
 	m(3, 0) = 0;   m(3, 1) = 0;   m(3, 2) = 0;   m(3, 3) = 7;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1277,7 +1277,7 @@ void testDetFourByFourNegative2(std::ostream &out){
 	m(2, 0) = 3;   m(2, 1) = 4;   m(2, 2) = 1;   m(2, 3) = 2;
 	m(3, 0) = 1;   m(3, 1) = 0;   m(3, 2) = 2;   m(3, 3) = -1;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1291,7 +1291,7 @@ void testDetFourByFourZero1(std::ostream &out){
 	m(2, 0) = 0;   m(2, 1) = 0;   m(2, 2) = 0;   m(2, 3) = 0;
 	m(3, 0) = -3;  m(3, 1) = 2;   m(3, 2) = 1;   m(3, 3) = -1;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1305,7 +1305,7 @@ void testDetFourByFourZero2(std::ostream &out){
 	m(2, 0) = 3;   m(2, 1) = -1;  m(2, 2) = 0;   m(2, 3) = 1;
 	m(3, 0) = 1;   m(3, 1) = 2;   m(3, 2) = 0;   m(3, 3) = 0;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1317,7 +1317,7 @@ void testDetThreeByThreePositive(std::ostream &out){
 	m(0, 0) = 2; m(0, 1) = 1; m(0, 2) = 1;
 	m(1, 0) = 1; m(1, 1) = 3; m(1, 2) = 2;
 	m(2, 0) = 1; m(2, 1) = 0; m(2, 2) = 4;
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1329,7 +1329,7 @@ void testDetThreeByThreeNegative(std::ostream &out){
 	m(0, 0) = 2; m(0, 1) = 1; m(0, 2) = 1;
 	m(1, 0) = 1; m(1, 1) = 0; m(1, 2) = 4;
 	m(2, 0) = 1; m(2, 1) = 3; m(2, 2) = 2;
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1341,7 +1341,7 @@ void testDetThreeByThreeZero(std::ostream &out){
 	m(0, 0) = 1; m(0, 1) = 2; m(0, 2) = 3;
 	m(1, 0) = 3; m(1, 1) = 3; m(1, 2) = 6;
 	m(2, 0) = 2; m(2, 1) = 1; m(2, 2) = 3;
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1353,7 +1353,7 @@ void testDetTwoByTwoPositive(std::ostream &out){
 	m(0, 0) = 2;	m(0, 1) = 1;
 	m(1, 0) = 1;	m(1, 1) = 1;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1365,7 +1365,7 @@ void testDetTwoByTwoNegative(std::ostream &out){
 	m(0, 0) = 1;	m(0, 1) = 3;
 	m(1, 0) = 2;	m(1, 1) = 1;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1377,7 +1377,7 @@ void testDetTwoByTwoZero(std::ostream &out){
 	m(0, 0) = -3;   m(0, 1) = -1041;
 	m(1, 0) = 5;    m(1, 1) = 1735;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1388,7 +1388,7 @@ void testDetOneByOnePositive(std::ostream &out){
     Matrix m(1, 1);
 	m(0, 0) = 4;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1399,7 +1399,7 @@ void testDetOneByOneNegative(std::ostream &out){
     Matrix m(1, 1);
 	m(0, 0) = -37;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1410,7 +1410,7 @@ void testDetOneByOneZero(std::ostream &out){
     Matrix m(1, 1);
 	m(0, 0) = 0;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1420,7 +1420,7 @@ void testDetOneByOneZero(std::ostream &out){
 void testDetZero1(std::ostream &out){
     Matrix m(0,0);
 	m(0, 0) = 0;
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 }
 
 void testDetLongRectangle(std::ostream &out){
@@ -1429,7 +1429,7 @@ void testDetLongRectangle(std::ostream &out){
 	m(1, 0) = -2;	m(1, 1) =  9;	m(1, 2) =  1;	m(1, 3) = -3;	m(1, 4) =  8;	m(1, 5) = -7;	m(1, 6) =  5;
 	m(2, 0) =  2;	m(2, 1) = -4;	m(2, 2) =  6;	m(2, 3) = -9;	m(2, 4) =  1;	m(2, 5) =  7;	m(2, 6) = -8;
 	m(3, 0) =  5;	m(3, 1) =  3;	m(3, 2) = -2;	m(3, 3) =  4;	m(3, 4) = -6;	m(3, 5) =  9;	m(3, 6) =  1;
-    int det = CalcDeterminant(m);
+    int det = Matrix::CalcDeterminant(m);
 }
 
 void testDetTallRectangle(std::ostream &out){
@@ -1441,7 +1441,7 @@ void testDetTallRectangle(std::ostream &out){
 	m(4, 0) = -2; m(4, 1) =  5; m(4, 2) =  3; m(4, 3) = -1;
 	m(5, 0) =  6; m(5, 1) = -9; m(5, 2) =  2; m(5, 3) =  4;
 	m(6, 0) = -3; m(6, 1) =  8; m(6, 2) = -4; m(6, 3) =  9;
-    int det = CalcDeterminant(m);
+    int det = Matrix::CalcDeterminant(m);
 }
 
 void testDetPermutation1(std::ostream &out){
@@ -1451,7 +1451,7 @@ void testDetPermutation1(std::ostream &out){
 	m(2, 0) = 0;	m(2, 1) = 0;	m(2, 2) = 1;	m(2, 3) = 0;
 	m(3, 0) = 0;	m(3, 1) = 0;	m(3, 2) = 0;	m(3, 3) = 1;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1466,7 +1466,7 @@ void testDetPermutation2(std::ostream &out){
 	m(3, 0) = 0;	m(3, 1) = 1;	m(3, 2) = 0;	m(3, 3) = 0;	m(3, 4) = 0;
 	m(4, 0) = 0;	m(4, 1) = 0;	m(4, 2) = 0;	m(4, 3) = 1;	m(4, 4) = 0;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1481,7 +1481,7 @@ void testDetIdentity(std::ostream &out){
 	m(3, 0) = 0;	m(3, 1) = 0;	m(3, 2) = 0;	m(3, 3) = 1;	m(3, 4) = 0;
 	m(4, 0) = 0;	m(4, 1) = 0;	m(4, 2) = 0;	m(4, 3) = 0;	m(4, 4) = 1;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1496,7 +1496,7 @@ void testDetDiagonal(std::ostream &out){
 	m(3, 0) = 0;	m(3, 1) = 0;	m(3, 2) = 0;	m(3, 3) = 7;	m(3, 4) = 0;
 	m(4, 0) = 0;	m(4, 1) = 0;	m(4, 2) = 0;	m(4, 3) = 0;	m(4, 4) = 11;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1511,7 +1511,7 @@ void testDetLinearlyDependentFiveByFive(std::ostream &out){
 	m(3, 0) = 4;	m(3, 1) = 5;	m(3, 2) = 6;	m(3, 3) = 7;	m(3, 4) = 8;
 	m(4, 0) = 5;	m(4, 1) = 6;	m(4, 2) = 7;	m(4, 3) = 8;	m(4, 4) = 9;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
@@ -1526,12 +1526,9 @@ void testDetAllZeroFiveByFive(std::ostream &out){
 	m(3, 0) = 0;	m(3, 1) = 0;	m(3, 2) = 0;	m(3, 3) = 0;	m(3, 4) = 0;
 	m(4, 0) = 0;	m(4, 1) = 0;	m(4, 2) = 0;	m(4, 3) = 0;	m(4, 4) = 0;
 
-	int det = CalcDeterminant(m);
+	int det = Matrix::CalcDeterminant(m);
 	out << "m:" << endl;
 	out << m << endl;
 	out << "det:" << endl;
 	out << det << endl;
 }
-
-
-
