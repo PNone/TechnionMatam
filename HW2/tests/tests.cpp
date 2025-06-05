@@ -1361,7 +1361,7 @@ void testDetTwoByTwoPositive(std::ostream &out){
 }
 
 void testDetTwoByTwoNegative(std::ostream &out){
-    	Matrix m(2, 2);
+    Matrix m(2, 2);
 	m(0, 0) = 1;	m(0, 1) = 3;
 	m(1, 0) = 2;	m(1, 1) = 1;
 
@@ -1420,7 +1420,7 @@ void testDetOneByOneZero(std::ostream &out){
 void testDetZero1(std::ostream &out){
     Matrix m(0,0);
 	m(0, 0) = 0;
-	int det = Matrix::CalcDeterminant(m);
+	Matrix::CalcDeterminant(m);
 }
 
 void testDetLongRectangle(std::ostream &out){
@@ -1429,7 +1429,7 @@ void testDetLongRectangle(std::ostream &out){
 	m(1, 0) = -2;	m(1, 1) =  9;	m(1, 2) =  1;	m(1, 3) = -3;	m(1, 4) =  8;	m(1, 5) = -7;	m(1, 6) =  5;
 	m(2, 0) =  2;	m(2, 1) = -4;	m(2, 2) =  6;	m(2, 3) = -9;	m(2, 4) =  1;	m(2, 5) =  7;	m(2, 6) = -8;
 	m(3, 0) =  5;	m(3, 1) =  3;	m(3, 2) = -2;	m(3, 3) =  4;	m(3, 4) = -6;	m(3, 5) =  9;	m(3, 6) =  1;
-    int det = Matrix::CalcDeterminant(m);
+    Matrix::CalcDeterminant(m);
 }
 
 void testDetTallRectangle(std::ostream &out){
@@ -1441,7 +1441,7 @@ void testDetTallRectangle(std::ostream &out){
 	m(4, 0) = -2; m(4, 1) =  5; m(4, 2) =  3; m(4, 3) = -1;
 	m(5, 0) =  6; m(5, 1) = -9; m(5, 2) =  2; m(5, 3) =  4;
 	m(6, 0) = -3; m(6, 1) =  8; m(6, 2) = -4; m(6, 3) =  9;
-    int det = Matrix::CalcDeterminant(m);
+    Matrix::CalcDeterminant(m);
 }
 
 void testDetPermutation1(std::ostream &out){
