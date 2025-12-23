@@ -251,7 +251,7 @@
     },
         {
       "name": "null matrix det calc",
-      "template": "hw2Error",
+      "template": "hw2",
       "params": {
         "testName": "testDetZero",
         "out": "testDetZero.out"
