@@ -1,0 +1,18 @@
+Movie Name: may leak due to strings
+Author: oopsie
+
+Frame 0:
+|1|2|3|
+|4|5|6|
+|7|8|9|
+
+-----End of Movie-----
+Movie Name: may leak due to strings and matrix
+Author: oopsie
+
+Frame 0:
+|1|2|3|
+|4|5|6|
+|7|8|9|
+
+-----End of Movie-----

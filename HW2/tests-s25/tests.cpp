@@ -1419,10 +1419,7 @@ void testDetOneByOneZero(std::ostream &out){
 
 void testDetZero(std::ostream &out){
     Matrix m(0,0);
-    const int det = Matrix::CalcDeterminant(m);
-
-    out << "det:" << endl;
-	out << det << endl;
+    Matrix::CalcDeterminant(m);
 }
 
 void testDetLongRectangle(std::ostream &out){

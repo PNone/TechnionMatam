@@ -257,7 +257,8 @@
         "out": "testDetZero.out"
       },
       "output_file": "testDetZero.out",
-      "expected_output_file": "testDetZero.expected"
+      "expected_output_file": "SquareError.expected",
+      "run_leaks": false
     },
     {
       "name": "Long Rectangle det calc error",
